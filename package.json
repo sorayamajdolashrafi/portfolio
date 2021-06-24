@@ -9,14 +9,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest --verbose",
+    "test": "jest",
     "test:watch": "npm run test -- --watch"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@types/jest": "^26.0.23",
+    "identity-obj-proxy": "^3.0.0",
+    "next": "latest"
   },
   "devDependencies": {
     "@testing-library/dom": "^7.31.2",
-    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
-    "babel-jest": "^27.0.2",
+    "babel-jest": "^27.0.5",
     "jest": "^27.0.4",
     "jest-dom": "^4.0.0",
     "next": "10.2.3",
