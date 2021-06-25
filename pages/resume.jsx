@@ -1,9 +1,9 @@
-import React from 'react'
+import styles from '../styles/resume.module.css';
 
 export default function Resume() {
     return (
-        <div>
+        <main className="page">
             <h1>resumaaaaay</h1>
-        </div>
+        </main>
     )
 }
