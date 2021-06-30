@@ -5,7 +5,8 @@ const Welcome = props => {
     return (
         <div className={styles.moonCradle}>
             <div className={styles.moon}>
-                <h1>wut up rat bastards</h1>
+                <h2>hi.</h2>
+                <h2>software engineer here.</h2>
             </div>
         </div>
     )

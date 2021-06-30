@@ -1,15 +1,17 @@
 .footer {
     width: 100%;
     height: 3rem;
-    background: coral;
+    /* background: #325300; */
     position: absolute;
     bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    z-index: 3;
 }
 
 .footer a {
     margin: 0.5rem;
+    color: #325300;
 }

@@ -5,16 +5,15 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background: chartreuse;
 }
 
 .moon {
-    width: 80vh;
-    height: 40vh;
-    border-radius:  80vh 80vh 0 0;
-    background: cyan;
-    /* position: absolute; */
-    /* top: 0; */
-    /* transform: translate(-50%,-50%); */
-
+    width: 140vh;
+    height: 70vh;
+    border-radius:  140vh 140vh 0 0;
+    background: #FFD900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

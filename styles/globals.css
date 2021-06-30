@@ -12,14 +12,16 @@ html, body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
   position: relative;
+  background: ivory;
 }
 
 .page {
   width: 100%;
-  height: 77vh;
+  height: 100%;
   transform: translate3d(0, 0, 0);
   position: absolute;
-  top: 8rem;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
