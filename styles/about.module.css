@@ -1,0 +1,24 @@
+.moonCradle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.moon {
+    width: 140vh;
+    height: 70vh;
+    border-radius:  140vh 140vh 0 0;
+    background: #FFD900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moon p {
+    width: 50%;
+    text-align: center;
+}
