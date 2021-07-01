@@ -12,13 +12,85 @@
     height: 70vh;
     border-radius:  140vh 140vh 0 0;
     background: #FFD900;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    gap: .5rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
-.moon p {
-    width: 50%;
-    text-align: center;
+.moon figure {
+    width: auto;
+    box-shadow: black -8px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+} 
+
+.moon img {
+    height: 11rem;
+    width: auto;
+    border-radius: 1px;
+}
+
+.moon h2 {
+    font-size: 1.8rem;
+}
+
+.moon ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+} 
+
+.moon li {
+    margin-bottom: .5rem;
+}
+
+.moon h3 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.bio {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+}
+
+.p1 {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.p2 {
+    width: 70%;
+    font-size: 1.1rem;
+    text-align: right;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.tech {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: .5rem;
+}
+
+.tech p {
+    width: 90%;
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 0;
 }

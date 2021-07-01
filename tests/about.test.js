@@ -8,6 +8,6 @@
  describe('app test', () => {
      it('renders app', () => {
          render(<About/>)
-         screen.getByText('yikes, about')
+         screen.getByText('oh, hello!')
      })
  })

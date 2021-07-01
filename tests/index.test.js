@@ -8,6 +8,6 @@ import Index from '../pages/index';
 describe('app test', () => {
     it('renders app', () => {
         render(<Index/>)
-        screen.getByText('wut up rat bastards')
+        screen.getByText('software engineer here.')
     })
 })

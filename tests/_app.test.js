@@ -32,7 +32,7 @@ describe('app test', () => {
         const about = screen.getByRole('link', { name: 'about' });
 
         userEvent.click(about);
-        screen.getByText('yikes, about');
+        screen.getByText('oh, hello!');
     });
 
     it('renders header and tests link to connect', async () => {

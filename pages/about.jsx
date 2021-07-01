@@ -1,10 +1,9 @@
-import Bio from '../components/about/Bio';
-import styles from '../styles/about.module.css';
+import Moon from '../components/about/Moon';
 
 export default function About() {
     return (
         <main className="page">
-            <Bio/>
+            <Moon />
         </main>
     )
 }
