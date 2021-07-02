@@ -25,12 +25,6 @@ const Footer = () => {
                 aria-label="link to twitter">
                 <TwitterIcon />
             </a>
-            <a href="mailto:soraya.benson@gmail.com" 
-                role="button"
-                target="_blank"
-                aria-label="link to email">
-                <EmailIcon />
-            </a>
         </footer>
     )
 }
