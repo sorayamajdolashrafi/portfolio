@@ -1,19 +1,27 @@
 import PropTypes from 'prop-types';
-import ViewSDKClient from './ViewSDKCLient';
+// import ViewSDKClient from './ViewSDKCLient';
+// import { useEffect } from 'react';
+import { Document } from 'react-pdf';
 
 const CV = props => {
+    // useEffect(() => {
+    //     const viewSDKClient = new ViewSDKClient();
+    //     viewSDKClient.ready().then(() => {
+    //         /* Invoke file preview */
+    //         viewSDKClient.previewFile("pdfWrapper", {
+    //             /* Pass the embed mode option here */
+    //             embedMode: "IN_LINE"
+    //         });
+    //     });
+    // }, []);
 
     return (
         <section>
-            <embed 
-                src='/soraya-benson-software-engineer-resume.pdf'
-                type='application/pdf'
-                width='auto'
-                height='100%' />
-
-            {/* <div id="resume" /> */}
+            hello
+            {/* <Document file='soraya-benson-software-engineer-resume.pdf' /> */}
+            <iframe src='soraya-benson-software-engineer-resume.pdf' height="100%" width="80%"></iframe>
         </section>
-    )
+    );
 }
 
 CV.propTypes = {

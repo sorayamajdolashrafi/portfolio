@@ -17,14 +17,14 @@ class ViewSDKClient {
         return this.readyPromise;
     }
 
-    previewFile(divId, viewerConfig) {
+    previewFile(pdfWrapper, viewerConfig) {
         const config = {
             /* Pass your registered client id */
             clientId: `${process.env.ADOBE_KEY}`,
         };
-        if (divId) { /* Optional only for Light Box embed mode */
+        if (pdfWrapper) { /* Optional only for Light Box embed mode */
             /* Pass the div id in which PDF should be rendered */
-            config.divId = divId;
+            config.divId = pdfWrapper;
         }
         /* Initialize the AdobeDC View object */
         this.adobeDCView = new window.AdobeDC.View(config);
@@ -52,7 +52,7 @@ class ViewSDKClient {
                 /* file name */
                 fileName: "soraya-benson-software-engineer-resume.pdf",
                 /* file ID */
-                id: "",
+                id: "1",
             }
         }, viewerConfig);
 
@@ -65,7 +65,7 @@ class ViewSDKClient {
             /* Pass your registered client id */
             clientId: `${process.env.ADOBE_KEY}`,
             /* Pass the div id in which PDF should be rendered */
-            resume,
+            divId,
         });
 
         /* Invoke the file preview API on Adobe DC View object */

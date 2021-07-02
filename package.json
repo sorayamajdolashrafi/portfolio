@@ -28,6 +28,7 @@
     "@material-ui/icons": "^4.11.2",
     "@testing-library/user-event": "^13.1.9",
     "identity-obj-proxy": "^3.0.0",
-    "next-page-tester": "^0.26.1"
+    "next-page-tester": "^0.26.1",
+    "react-pdf": "^5.3.0"
   }
 }
