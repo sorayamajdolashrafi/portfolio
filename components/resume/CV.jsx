@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 // import ViewSDKClient from './ViewSDKCLient';
 // import { useEffect } from 'react';
-import { Document } from 'react-pdf';
 
 const CV = props => {
     // useEffect(() => {
@@ -18,7 +17,6 @@ const CV = props => {
     return (
         <section>
             hello
-            {/* <Document file='soraya-benson-software-engineer-resume.pdf' /> */}
             <iframe src='soraya-benson-software-engineer-resume.pdf' height="100%" width="80%"></iframe>
         </section>
     );
