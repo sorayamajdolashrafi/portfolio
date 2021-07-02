@@ -2,7 +2,6 @@ import styles from '../../styles/Footer.module.css';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import EmailIcon from '@material-ui/icons/Email';
 
 const Footer = () => {
     return (
