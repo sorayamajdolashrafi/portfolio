@@ -6,7 +6,7 @@ import Tech from './Tech';
 const Moon = () => {
     return (
         <div className={styles.moonCradle}>
-            <div className={styles.moon}>
+            <div className={styles.moon} data-testid="moon">
                 <Bio />
                 <Portrait />
                 <Tech />

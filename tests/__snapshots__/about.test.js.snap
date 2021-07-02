@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`about test renders about 1`] = `
+<div
+  class="moon"
+  data-testid="moon"
+>
+  <section
+    class="bio"
+  >
+    <h2>
+      oh, hello!
+    </h2>
+    <p
+      class="p1"
+    >
+      I'm a full-stack software engineer with a background as a visual artist, crafting worlds is my jam.
+    </p>
+    <p
+      class="p2"
+    >
+      I adore interactive storytelling and love weaving together different skills to bring those stories to life. Getting to do that with a rad team is even better.
+    </p>
+    <p
+      class="p3"
+    >
+      Right now I'm really into learning about how to make the internet accesible. Off the internet I'm learning how to actually weave tiny carpets.
+    </p>
+  </section>
+  <section
+    class="portrait"
+  >
+    <img
+      alt="black and white photobooth strip with 4 portraits of soraya"
+      src="portrait.png"
+    />
+  </section>
+  <section
+    class="tech"
+  >
+    <h2>
+      tech:
+    </h2>
+    <ul>
+      <li>
+        <h3>
+          languages
+        </h3>
+        <p>
+          JavaScript, HTML, CSS
+        </p>
+      </li>
+      <li>
+        <h3>
+          testing suites
+        </h3>
+        <p>
+          Jest, Supertest, QUnit, React Testing Library
+        </p>
+      </li>
+      <li>
+        <h3>
+          libraries + frameworks
+        </h3>
+        <p>
+          React, Node, Express, Superagent, Webpack, Material-UI, Socket.IO, Next.js
+        </p>
+      </li>
+      <li>
+        <h3>
+          databases
+        </h3>
+        <p>
+          PostgreSQL
+        </p>
+      </li>
+      <li>
+        <h3>
+          skills
+        </h3>
+        <p>
+          TDD, Remote Collaboration, Pair Programing
+        </p>
+      </li>
+      <li>
+        <h3>
+          dev tools
+        </h3>
+        <p>
+          VScode, Github, Postman, PGadmin, Heroku, Netlify, Adobe CC
+        </p>
+      </li>
+    </ul>
+  </section>
+</div>
+`;

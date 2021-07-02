@@ -60,4 +60,16 @@ describe('app test', () => {
         userEvent.click(cv);
         screen.getByText('resumaaaaay');
     })
+
+    it('renders footer', async () => {
+        const { render } = await getPage({
+            route: '/index',
+        })
+        render(<App />);
+
+        const linkedin = screen.getByRole('button', { name: 'link to linkedin' });
+        const github = screen.getByRole('button', { name: 'link to github' });
+        const twitter = screen.getByRole('button', { name: 'link to twitter' });
+
+    })
 })
