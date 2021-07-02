@@ -11,6 +11,9 @@ const Bio = props => {
             <p className={styles.p2}>
                 I adore interactive storytelling and love weaving together different skills to bring those stories to life. Getting to do that with a rad team is even better.
             </p>
+            <p className={styles.p3}>
+                Right now I'm really into learning about how to make the internet accesible. Off the internet I'm learning how to actually weave tiny carpets.
+            </p>
         </section>
     )
 }
