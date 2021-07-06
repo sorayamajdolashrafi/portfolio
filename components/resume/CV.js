@@ -35,26 +35,26 @@ const CV = props => {
                             <ul>
                                 <li key="email">
                                     <EmailIcon className={styles.icon}/>
-                                    <a href="mailto:soraya.benson@gmail.com">email</a>
+                                    <a href="mailto:soraya.benson@gmail.com" target="_blank">email</a>
                                 </li>
                                 <li key="phone">
                                     <PhoneInTalkIcon className={styles.icon}/>
-                                    <a href="tel:1-503-438-6848">phone</a>
+                                    <a href="tel:1-503-438-6848" target="_blank">phone</a>
                                 </li>
                                 <li key="location">
                                     <LocationOnIcon className={styles.icon}/>Beaverton, OR
                                 </li>
                                 <li key="website">
                                     <FlashOnIcon className={styles.icon}/>
-                                    <a href="https://www.sorayabenson.com/">sorayabenson.com</a>
+                                    <a href="https://www.sorayabenson.com/" target="_blank">sorayabenson.com</a>
                                 </li>
                                 <li key="linkedin">
                                     <LinkedInIcon className={styles.icon}/>
-                                    <a href="https://www.linkedin.com/in/soraya-benson/">/soraya-benson</a>
+                                    <a href="https://www.linkedin.com/in/soraya-benson/" target="_blank">/soraya-benson</a>
                                 </li>
                                 <li key="github">
                                     <GitHubIcon className={styles.icon}/>
-                                    <a href="https://github.com/sorayabenson">/sorayabenson</a>
+                                    <a href="https://github.com/sorayabenson" target="_blank">/sorayabenson</a>
                                 </li>
                             </ul>
                         </div>
@@ -100,8 +100,8 @@ const CV = props => {
                                         <div className={styles.projectHeader}>
                                             <h6>{project.name} |</h6>
                                             <span>
-                                                <a href={project.github}>github</a> + 
-                                                <a href={project.site}>site</a> |
+                                                <a href={project.github} target="_blank">github</a> + 
+                                                <a href={project.site} target="_blank">site</a> |
                                             </span>
                                             <span>{project.tech}</span>
                                         </div>
