@@ -1,0 +1,16 @@
+.cv {
+    height: 80%;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tinyBoy {
+    height: 50%;
+}
+
+.tinyBoy ul {
+    list-style: none;
+}

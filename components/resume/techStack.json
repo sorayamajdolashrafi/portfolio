@@ -1,0 +1,57 @@
+[
+    {
+        "category": "Langauges",
+        "skills": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ]
+    },
+    {
+        "category": "Testing Suites",
+        "skills": [
+            "Jest",
+            "SuperTest",
+            "QUnit",
+            "React Testing Library"
+        ]
+    },
+    {
+        "category": "Skills",
+        "skills": [
+            "TDD",
+            "Remote Collaboration",
+            "Pair Programing"
+        ]
+    },
+    {
+        "category": "Databases",
+        "skills": [
+            "PostgresSQL/SQL"
+        ]
+    },
+    {
+        "category": "Libraries + Frameworks",
+        "skills": [
+            "React",
+            "Node",
+            "Express",
+            "Superagent",
+            "Webpack",
+            "Material-UI",
+            "Socket.IO"
+        ]
+    },
+    {
+        "category": "Dev Tools",
+        "skills": [
+            "VSCode",
+            "GitHub",
+            "Postman",
+            "PGAdmin",
+            "Heroku",
+            "Netlify",
+            "Adobe CC"
+        ]
+    }
+]

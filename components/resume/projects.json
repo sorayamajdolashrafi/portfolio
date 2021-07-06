@@ -1,0 +1,35 @@
+[
+    {
+        "name": "beatWavez",
+        "github": "https://github.com/the-treblemakers",
+        "site": "https://beatwavez.com/",
+        "tech": "React, Material UI, Socket.IO, Express",
+        "tag": "A karaoke party app, where users can create and join party rooms, chat, and add songs to a shared queue.",
+        "contributions": [
+            "Remotely mob and pair programmed with a team of five in a two week sprint.",
+            "Wielded the power of the Material UI library to implement the mobile first design."
+        ]
+    },
+    {
+        "name": "Pixel Pusher",
+        "github": "https://github.com/st-ART-up/the-canvas",
+        "site": "https://www.npmjs.com/package/@st-art-up/pixel-pusher",
+        "tech": "Express, Blessed, Node.js",
+        "tag": "Pixel Pusher is an art app for the terminal, remotely mob and pair programmed in a two week sprint.",
+        "contributions": [
+            "Strategically organized the file structure to maintain navigable code.",
+            "Devised the base brush shape whose style and size is modified through multiple parameters to create other brushes."
+        ]
+    },
+    {
+        "name": "Else By Elsewhere",
+        "github": "https://github.com/where-in-the-search",
+        "site": "https://else-by-elsewhere.netlify.app/",
+        "tech": "React, Express, PostgreSQL",
+        "tag": "Else By Elsewhere is a geo guessing game built in a remote one week sprint on a team of four.",
+        "contributions": [
+            "Wove together multiple APIs to create our own RESTful API for this full-stack React app.",
+            "Built the wireframes, implemented the design, and used my sharp eye for detail to catch bugs and refactor to create cleaner code."
+        ]
+    }
+]
