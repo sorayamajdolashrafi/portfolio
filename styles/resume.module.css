@@ -9,66 +9,19 @@
     padding: 1rem;
 }
 
-.header {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-}
-
-.name {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
-}
-
-.name h2 {
+.cv h2 {
     margin: 0;
     padding: 0;
-    font-size: 4rem;
-    letter-spacing: -0.2rem;
-    line-height: 3.5rem;
-}
-
-.name h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.6rem;
+    font-size: 1.45em;
     font-weight: 600;
-}
-
-.tag {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
+    line-height: 1.6rem;
     text-align: right;
 }
 
-.tag h4 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.6rem;
-}
-
-.meat {
+.cv h3 {
     width: 100%;
-    height: 100%;
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 3rem;
-}
-
-.meat h5 {
     margin: 0;
+    margin-top: 0.5rem;
     padding: 0;
     font-size: 1.6rem;
     font-weight: 700;
@@ -76,7 +29,7 @@
     border-bottom: black solid 3px;
 }
 
-.meat h6 {
+.cv h4 {
     margin: 0;
     margin-right: 0.3rem;
     padding: 0;
@@ -84,16 +37,7 @@
     font-weight: 700;
 }
 
-.tinyBoy {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.tinyBoy ul {
+.cv ul {
     margin: 0;
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
@@ -101,14 +45,35 @@
     list-style: none;
 }
 
+.cv a:hover {
+    transition: 0.3s ease-in-out;
+    color: #325300;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
 .contact {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact ul {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .contact li {
     margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -130,16 +95,20 @@
 .tech {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.techUL {
+.technologies {
+    width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.tech li {
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+.technologies li {
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -153,9 +122,133 @@
     padding: 0;
 }
 
+.specifics li {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.1rem;
+}
+
+.projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.builds {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.builds li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.projectHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projectHeader a {
+    color: black;
+    margin-right: 0.3rem;
+}
+
+.projectHeader p {
+    margin: 0;
+    margin-right: 0.3rem;
+}
+
+.projectTag {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.contributions {
+    margin-top: 0.3rem;
+}
+
+.contributions li {
+    margin: 0;
+    margin-left: 1.1rem;
+    margin-bottom: 0.3rem;
+    list-style: disc;
+}
+
+.contributions p {
+    margin: 0;
+    padding: 0;
+}
+
+.experience {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience p {
+    margin: 0;
+    padding: 0;
+}
+
+.jobHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.job {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.job li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.3rem;
+}
+
+.skills li {
+    margin: 0;
+    margin-left: 1.1rem;
+    margin-bottom: 0.3rem;
+    padding: 0;
+    list-style: disc;
+}
+
 .education {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .education p {
@@ -164,8 +257,14 @@
     padding: 0;
 }
 
+.education ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .education li {
-    margin-bottom: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .school {
@@ -174,100 +273,26 @@
     margin-bottom: 0.2rem;
 }
 
-.bigBoy {
-    height: 100%;
-    width: 100%;
+.pdf {
+    width: 4rem;
+    margin: 1rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    text-decoration: none;
+    color: ivory;
+    background: #325300;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
 }
 
-.bigBoy p {
-    margin: 0;
-    margin-bottom: 0.1rem;
-    padding: 0;
+.pdf:hover {
+    box-shadow: black -5px 5px;
 }
 
-.projects {
-    width: 100%;
-    height: 100%;
-}
-
-
-.projectHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-bottom: 0.3rem;
-}
-
-.projectHeader a {
-    color: black;
-}
-
-.projectHeader span {
-    margin-right: 0.3rem;
-}
-
-.projectTag {
-    font-style: italic;
-}
-
-.projectUL {
-    height: 90%;
-    margin: 0;
-    margin-top: 0.7rem;
-    margin-bottom: 0.7rem;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.projectUL li {
-    margin-bottom: 0.8rem;
-}
-
-.contributions {
-    margin-top: 0.3rem;
-    list-style: disc;
-}
-
-.contributions li {
-    margin: 0;
-}
-
-.experience {
-    width: 100%;
-    height: auto;
-}
-
-.jobHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-bottom: 0.3rem;
-}
-
-.experienceUL {
-    margin: 0;
-    margin-top: 0.7rem;
-    margin-bottom: 0.7rem;
-    padding: 0;
-    list-style: none;
-}
-
-.experienceUL li {
-    margin-bottom: 0.8rem;
-}
-
-.skills {
-    margin-top: 0.3rem;
-    list-style: disc;
-}
-
-.skills li {
-    margin: 0;
+.pdf:active {
+    box-shadow: transparent 0px 0px;
+    transform: translate3d(-5px, 5px, 0);
 }

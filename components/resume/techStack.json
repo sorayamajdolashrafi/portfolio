@@ -29,6 +29,12 @@
         ]
     },
     {
+        "category": "Databases",
+        "skills": [
+            "PostgresSQL/SQL"
+        ]
+    },
+    {
         "category": "Dev Tools",
         "skills": [
             "VSCode",
@@ -38,12 +44,6 @@
             "Heroku",
             "Netlify",
             "Adobe CC"
-        ]
-    },
-    {
-        "category": "Databases",
-        "skills": [
-            "PostgresSQL/SQL"
         ]
     },
     {

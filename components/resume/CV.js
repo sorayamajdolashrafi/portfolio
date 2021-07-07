@@ -14,138 +14,124 @@ import experience from './experience.json';
 
 const CV = props => {
     return (
-        <section className={styles.cv}>
-            <div className={styles.header}>
-                <div className={styles.name}>
-                    <h2>SORAYA<br/>BENSON</h2>
-                    <h3>Full-stack Software Engineer</h3>
-                </div>
-                <div className={styles.tag}>
-                    <h4>
-                        Full-stack software engineer with a<br/>background as a visual artist who adores<br/>interactive storytelling and accessible design.
-                    </h4>
-                    <h4>
-                        &#123; fine details + teamwork +<br/>clean code + problem solving &#125;
-                    </h4>
-                </div>
-            </div>
-            <div className={styles.meat}>
-                    <div className={styles.tinyBoy}>
-                        <div className={styles.contact}>
-                            <h5>contact</h5>
-                            <ul>
-                                <li key="email">
-                                    <EmailIcon fontSize="small" className={styles.icon}/>
-                                    <a href="mailto:soraya.benson@gmail.com" target="_blank">email</a>
-                                </li>
-                                <li key="phone">
-                                    <PhoneInTalkIcon fontSize="small" className={styles.icon}/>
-                                    <a href="tel:1-503-438-6848" target="_blank">phone</a>
-                                </li>
-                                <li key="location">
-                                    <LocationOnIcon fontSize="small" className={styles.icon}/>Beaverton, OR
-                                </li>
-                                <li key="website">
-                                    <FlashOnIcon fontSize="small" className={styles.icon}/>
-                                    <a href="https://www.sorayabenson.com/" target="_blank">sorayabenson.com</a>
-                                </li>
-                                <li key="linkedin">
-                                    <LinkedInIcon fontSize="small" className={styles.icon}/>
-                                    <a href="https://www.linkedin.com/in/soraya-benson/" target="_blank">/soraya-benson</a>
-                                </li>
-                                <li key="github">
-                                    <GitHubIcon fontSize="small" className={styles.icon}/>
-                                    <a href="https://github.com/sorayabenson" target="_blank">/sorayabenson</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className={styles.tech}>
-                            <h5>tech skills</h5>
-                            <ul className={styles.techUL}>
-                                {techStack.map((tech) => (
-                                    <li key={tech.category}>
-                                        <h6>{tech.category}</h6>
-                                        <ul>
-                                            {tech.skills.map(skill => (
-                                                <li key={skill}>
-                                                    <p>{skill}</p>
-                                                </li>
-                                            ))}
-                                        </ul>
+        <div className={styles.cv}>
+            <header className={styles.header}>
+                <h2>
+                    Full-stack software engineer<br/>with a background as a visual artist<br/>who adores interactive storytelling and accessible design.
+                </h2>
+            </header>
+            <section className={styles.contact}>
+                <h3>contact</h3>
+                <ul>
+                    <li key="location">
+                        <LocationOnIcon fontSize="small" className={styles.icon}/>Beaverton, OR
+                    </li>
+                    <li key="email">
+                        <EmailIcon fontSize="small" className={styles.icon}/>
+                        <a href="mailto:soraya.benson@gmail.com" target="_blank">email</a>
+                    </li>
+                    <li key="phone">
+                        <PhoneInTalkIcon fontSize="small" className={styles.icon}/>
+                        <a href="tel:1-503-438-6848" target="_blank">phone</a>
+                    </li>
+                    <li key="website">
+                        <FlashOnIcon fontSize="small" className={styles.icon}/>
+                        <a href="https://www.sorayabenson.com/" target="_blank">sorayabenson.com</a>
+                    </li>
+                    <li key="linkedin">
+                        <LinkedInIcon fontSize="small" className={styles.icon}/>
+                        <a href="https://www.linkedin.com/in/soraya-benson/" target="_blank">/soraya-benson</a>
+                    </li>
+                    <li key="github">
+                        <GitHubIcon fontSize="small" className={styles.icon}/>
+                        <a href="https://github.com/sorayabenson" target="_blank">/sorayabenson</a>
+                    </li>
+                </ul>
+            </section>
+            <section className={styles.tech}>
+                <h3>tech skills</h3>
+                <ul className={styles.technologies}>
+                    {techStack.map((tech) => (
+                        <li key={tech.category}>
+                            <h4>{tech.category}</h4>
+                            <ul className={styles.specifics}>
+                                {tech.skills.map(skill => (
+                                    <li key={skill}>
+                                        <p>{skill}</p>
                                     </li>
                                 ))}
                             </ul>
-                        </div>
-                        <div className={styles.education}>
-                            <h5>education</h5>
-                            <ul>
-                                {education.map((degree) => (
-                                    <li key={degree.school}>
-                                    <div className={styles.school}>
-                                        <h6>{degree.school}</h6>
-                                        <p>| {degree.year}</p>
-                                    </div>
-                                    <p>{degree.title}</p>
-                                    <p>{degree.location}</p>
-                                </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                    <div className={styles.bigBoy}>
-                        <div className={styles.projects}>
-                            <h5>projects</h5>
-                            <ul className={styles.projectUL}>
-                                {projects.map((project => (
-                                    <li key={project.name}>
-                                        <div className={styles.projectHeader}>
-                                            <h6>{project.name}</h6>
-                                            <span>
-                                                | <a href={project.github} target="_blank">github</a> + <a href={project.site} target="_blank">site</a>
-                                            </span>
-                                            <span>| {project.tech}</span>
-                                        </div>
-                                        <p className={styles.projectTag}>{project.tag}</p>
-                                        <ul className={styles.contributions}>
-                                            {project.contributions.map((contribution, i) => (
-                                                <li key={i}>
-                                                    <p className={styles.contribution}>{contribution}</p>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </li>
-                                )))}
-                            </ul>
-                        </div>
-                        <div className={styles.experience}>
-                            <h5>experience</h5>
-                            <ul className={styles.experienceUL}>
-                                {experience.map((job) => (
-                                    <li key={job.title}>
-                                        <div className={styles.jobHeader}>
-                                            <h6>{job.title}</h6>
-                                            {
-                                                job.location ? 
-                                                <p>| {job.location}</p> 
-                                                : null
-                                            }
-                                            <p>| {job.year}</p>
-                                        </div>
-                                        <ul className={styles.skills}>
-                                                {job.skills.map((skill, i) => (
-                                                    <li key={i}>
-                                                        <p>{skill}</p>
-                                                    </li>
-                                                ))}
-                                        </ul>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+            <section className={styles.projects}>
+                <h3>projects</h3>
+                <ul className={styles.builds}>
+                    {projects.map((project => (
+                        <li key={project.name}>
+                            <div className={styles.projectHeader}>
+                                <h4>{project.name}</h4>
+                                <p>|</p> 
+                                <a href={project.github} target="_blank">github</a> 
+                                <p>+</p> 
+                                <a href={project.site} target="_blank">site</a>
+                                <p>| {project.tech}</p>
+                            </div>
+                            <p className={styles.projectTag}>{project.tag}</p>
+                            <ul className={styles.contributions}>
+                                {project.contributions.map((contribution, i) => (
+                                    <li key={i}>
+                                        <p className={styles.contribution}>{contribution}</p>
                                     </li>
                                 ))}
                             </ul>
+                        </li>
+                    )))}
+                </ul>
+            </section>
+            <section className={styles.experience}>
+                <h3>experience</h3>
+                <ul className={styles.job}>
+                    {experience.map((job) => (
+                        <li key={job.title}>
+                            <div className={styles.jobHeader}>
+                                <h4>{job.title}</h4>
+                                <p>| {job.location}</p>
+                                {/* {
+                                    job.location ? 
+                                    <p>| {job.location}</p> 
+                                    : null
+                                } */}
+                                <p>| {job.year}</p>
+                            </div>
+                            <ul className={styles.skills}>
+                                    {job.skills.map((skill, i) => (
+                                        <li key={i}>
+                                            <p>{skill}</p>
+                                        </li>
+                                    ))}
+                            </ul>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+            <section className={styles.education}>
+                <h3>education</h3>
+                <ul>
+                    {education.map((degree) => (
+                        <li key={degree.school}>
+                        <div className={styles.school}>
+                            <h4>{degree.school}</h4>
+                            <p>| {degree.year}</p>
                         </div>
-                    </div>
-                </div>
-        </section>
-
+                        <p>{degree.title}</p>
+                        <p>{degree.location}</p>
+                    </li>
+                    ))}
+                </ul>
+            </section>
+        </div>
     );
 }
 
