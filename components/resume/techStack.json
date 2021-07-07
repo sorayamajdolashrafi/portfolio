@@ -17,20 +17,6 @@
         ]
     },
     {
-        "category": "Skills",
-        "skills": [
-            "TDD",
-            "Remote Collaboration",
-            "Pair Programing"
-        ]
-    },
-    {
-        "category": "Databases",
-        "skills": [
-            "PostgresSQL/SQL"
-        ]
-    },
-    {
         "category": "Libraries + Frameworks",
         "skills": [
             "React",
@@ -52,6 +38,20 @@
             "Heroku",
             "Netlify",
             "Adobe CC"
+        ]
+    },
+    {
+        "category": "Databases",
+        "skills": [
+            "PostgresSQL/SQL"
+        ]
+    },
+    {
+        "category": "Skills",
+        "skills": [
+            "TDD",
+            "Remote Collaboration",
+            "Pair Programing"
         ]
     }
 ]

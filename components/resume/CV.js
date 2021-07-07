@@ -17,7 +17,7 @@ const CV = props => {
         <section className={styles.cv}>
             <div className={styles.header}>
                 <div className={styles.name}>
-                    <h2>SORAYA BENSON</h2>
+                    <h2>SORAYA<br/>BENSON</h2>
                     <h3>Full-stack Software Engineer</h3>
                 </div>
                 <div className={styles.tag}>
@@ -28,39 +28,40 @@ const CV = props => {
                         &#123; fine details + teamwork +<br/>clean code + problem solving &#125;
                     </h4>
                 </div>
-                <div className={styles.meat}>
+            </div>
+            <div className={styles.meat}>
                     <div className={styles.tinyBoy}>
                         <div className={styles.contact}>
                             <h5>contact</h5>
                             <ul>
                                 <li key="email">
-                                    <EmailIcon className={styles.icon}/>
+                                    <EmailIcon fontSize="small" className={styles.icon}/>
                                     <a href="mailto:soraya.benson@gmail.com" target="_blank">email</a>
                                 </li>
                                 <li key="phone">
-                                    <PhoneInTalkIcon className={styles.icon}/>
+                                    <PhoneInTalkIcon fontSize="small" className={styles.icon}/>
                                     <a href="tel:1-503-438-6848" target="_blank">phone</a>
                                 </li>
                                 <li key="location">
-                                    <LocationOnIcon className={styles.icon}/>Beaverton, OR
+                                    <LocationOnIcon fontSize="small" className={styles.icon}/>Beaverton, OR
                                 </li>
                                 <li key="website">
-                                    <FlashOnIcon className={styles.icon}/>
+                                    <FlashOnIcon fontSize="small" className={styles.icon}/>
                                     <a href="https://www.sorayabenson.com/" target="_blank">sorayabenson.com</a>
                                 </li>
                                 <li key="linkedin">
-                                    <LinkedInIcon className={styles.icon}/>
+                                    <LinkedInIcon fontSize="small" className={styles.icon}/>
                                     <a href="https://www.linkedin.com/in/soraya-benson/" target="_blank">/soraya-benson</a>
                                 </li>
                                 <li key="github">
-                                    <GitHubIcon className={styles.icon}/>
+                                    <GitHubIcon fontSize="small" className={styles.icon}/>
                                     <a href="https://github.com/sorayabenson" target="_blank">/sorayabenson</a>
                                 </li>
                             </ul>
                         </div>
                         <div className={styles.tech}>
                             <h5>tech skills</h5>
-                            <ul>
+                            <ul className={styles.techUL}>
                                 {techStack.map((tech) => (
                                     <li key={tech.category}>
                                         <h6>{tech.category}</h6>
@@ -94,19 +95,18 @@ const CV = props => {
                     <div className={styles.bigBoy}>
                         <div className={styles.projects}>
                             <h5>projects</h5>
-                            <ul>
+                            <ul className={styles.projectUL}>
                                 {projects.map((project => (
                                     <li key={project.name}>
                                         <div className={styles.projectHeader}>
-                                            <h6>{project.name} |</h6>
+                                            <h6>{project.name}</h6>
                                             <span>
-                                                <a href={project.github} target="_blank">github</a> + 
-                                                <a href={project.site} target="_blank">site</a> |
+                                                | <a href={project.github} target="_blank">github</a> + <a href={project.site} target="_blank">site</a>
                                             </span>
-                                            <span>{project.tech}</span>
+                                            <span>| {project.tech}</span>
                                         </div>
                                         <p className={styles.projectTag}>{project.tag}</p>
-                                        <ul>
+                                        <ul className={styles.contributions}>
                                             {project.contributions.map((contribution, i) => (
                                                 <li key={i}>
                                                     <p className={styles.contribution}>{contribution}</p>
@@ -119,7 +119,7 @@ const CV = props => {
                         </div>
                         <div className={styles.experience}>
                             <h5>experience</h5>
-                            <ul>
+                            <ul className={styles.experienceUL}>
                                 {experience.map((job) => (
                                     <li key={job.title}>
                                         <div className={styles.jobHeader}>
@@ -130,22 +130,20 @@ const CV = props => {
                                                 : null
                                             }
                                             <p>| {job.year}</p>
-                                            <ul>
+                                        </div>
+                                        <ul className={styles.skills}>
                                                 {job.skills.map((skill, i) => (
                                                     <li key={i}>
                                                         <p>{skill}</p>
                                                     </li>
                                                 ))}
-                                            </ul>
-                                        </div>
+                                        </ul>
                                     </li>
                                 ))}
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-
         </section>
 
     );

@@ -1,20 +1,273 @@
 .cv {
     height: 90%;
-    width: 60%;
+    width: 50%;
     overflow: scroll;
     display: grid;
     grid-template-rows: 1fr 4fr;
     background: white;
     border: #FFD900 15px solid;
     padding: 1rem;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.name h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    letter-spacing: -0.2rem;
+    line-height: 3.5rem;
+}
+
+.name h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.tag {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.tag h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.meat {
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 3rem;
+}
+
+.meat h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-bottom: 0.6rem;
+    border-bottom: black solid 3px;
+}
+
+.meat h6 {
+    margin: 0;
+    margin-right: 0.3rem;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .tinyBoy {
-    height: 50%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .tinyBoy ul {
+    margin: 0;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    padding: 0;
     list-style: none;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+}
+
+.contact li {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    margin-right: 0.5rem;
+    font-size: rem;
+}
+
+.tech {
+    width: 100%;
+    height: auto;
+}
+
+.techUL {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tech li {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.tech p {
+    margin: 0;
+    padding: 0;
+}
+
+.education {
+    width: 100%;
+    height: auto;
+}
+
+.education p {
+    margin: 0;
+    margin-bottom: 0.1rem;
+    padding: 0;
+}
+
+.education li {
+    margin-bottom: 0.8rem;
+}
+
+.school {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.2rem;
+}
+
+.bigBoy {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bigBoy p {
+    margin: 0;
+    margin-bottom: 0.1rem;
+    padding: 0;
+}
+
+.projects {
+    width: 100%;
+    height: 100%;
+}
+
+
+.projectHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 0.3rem;
+}
+
+.projectHeader a {
+    color: black;
+}
+
+.projectHeader span {
+    margin-right: 0.3rem;
+}
+
+.projectTag {
+    font-style: italic;
+}
+
+.projectUL {
+    height: 90%;
+    margin: 0;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectUL li {
+    margin-bottom: 0.8rem;
+}
+
+.contributions {
+    margin-top: 0.3rem;
+    list-style: disc;
+}
+
+.contributions li {
+    margin: 0;
+}
+
+.experience {
+    width: 100%;
+    height: auto;
+}
+
+.jobHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 0.3rem;
+}
+
+.experienceUL {
+    margin: 0;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    padding: 0;
+    list-style: none;
+}
+
+.experienceUL li {
+    margin-bottom: 0.8rem;
+}
+
+.skills {
+    margin-top: 0.3rem;
+    list-style: disc;
+}
+
+.skills li {
+    margin: 0;
 }
