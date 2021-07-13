@@ -14,5 +14,10 @@
 
 .footer a {
     margin: 0.5rem;
-    color: #325300;
+    color: var(--dusk);
+    transition: 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: var(--poppy);
 }

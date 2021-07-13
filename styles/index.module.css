@@ -11,7 +11,7 @@
     width: 140vh;
     height: 70vh;
     border-radius:  140vh 140vh 0 0;
-    background: #FFD900;
+    background: var(--moon);
     display: flex;
     flex-direction: column;
     justify-content: center;

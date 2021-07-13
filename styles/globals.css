@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cream: #fffffb;
+  --moon: #FFD000;
+  --poppy: #FF5B3E;
+  --mint: #1BCF91;
+  --dusk: #0A2728;
+}
+
 html, body {
   width: 100%;
   height: 100vh;
@@ -12,7 +20,7 @@ html, body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
   position: relative;
-  background: ivory;
+  background: var(--cream);
 }
 
 .page {

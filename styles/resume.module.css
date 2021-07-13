@@ -5,7 +5,7 @@
     display: grid;
     grid-template-rows: 1fr 4fr;
     background: white;
-    border: #FFD900 15px solid;
+    border: var(--moon) 15px solid;
     padding: 1rem;
 }
 
@@ -18,19 +18,18 @@
 
 
 .cv::-webkit-scrollbar-track {
-    background: tomato;
+    background: var(--poppy);
     border: white 3px solid;
 }
 
 .cv::-webkit-scrollbar-thumb {
     height: 50px;
-    background: turquoise;
+    background: var(--poppy);
 }
 
-.cv::-webkit-scrollbar-thumb:hover {
-    background: rgb(54, 184, 171);
-    transition: 0.2 ease-in-out;
-}
+/* .cv::-webkit-scrollbar-thumb:hover {
+    border-bottom: var(--dusk) 3px solid;
+} */
 
 .cv h2 {
     margin: 0;
@@ -305,14 +304,15 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: ivory;
-    background: #325300;
+    font-weight: 500;
+    color: black;
+    background: var(--poppy);
     border-radius: 2px;
     transition: 0.3s ease-in-out;
 }
 
 .pdf:hover {
-    box-shadow: black -5px 5px;
+    box-shadow: var(--dusk) -5px 5px;
 }
 
 .pdf:active {

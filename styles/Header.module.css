@@ -29,6 +29,19 @@
 }
 
 .header a {
+    font-weight: 500;
     text-decoration: none;
-    color: #325300;
+    color: var(--dusk);
+    transition: 0.2s ease-in-out;
+    /* border-bottom: transparent 3px solid; */
+    /* padding-bottom: 0.2rem; */
+    /* box-shadow: transparent -3px 3px; */
+    /* padding: 0.5rem; */
+}
+
+.header a:hover {
+    /* background: var(--poppy); */
+    color: var(--poppy);
+    /* box-shadow: var(--poppy) -3px 3px; */
+    /* border-bottom: var(--poppy) 3px solid; */
 }
