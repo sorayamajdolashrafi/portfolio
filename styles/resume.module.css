@@ -9,6 +9,29 @@
     padding: 1rem;
 }
 
+.cv::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 3px;
+    /* disable width scroll when site is scalable  */
+}
+
+
+.cv::-webkit-scrollbar-track {
+    background: tomato;
+    border: white 3px solid;
+}
+
+.cv::-webkit-scrollbar-thumb {
+    height: 50px;
+    background: turquoise;
+}
+
+.cv::-webkit-scrollbar-thumb:hover {
+    background: rgb(54, 184, 171);
+    transition: 0.2 ease-in-out;
+}
+
 .cv h2 {
     margin: 0;
     padding: 0;
