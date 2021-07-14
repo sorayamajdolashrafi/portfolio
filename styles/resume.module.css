@@ -7,6 +7,7 @@
     background: white;
     border: var(--moon) 15px solid;
     padding: 1rem;
+    margin-top: 1rem;
 }
 
 .cv::-webkit-scrollbar {
@@ -18,13 +19,13 @@
 
 
 .cv::-webkit-scrollbar-track {
-    background: var(--poppy);
+    background: var(--mint);
     border: white 3px solid;
 }
 
 .cv::-webkit-scrollbar-thumb {
     height: 50px;
-    background: var(--poppy);
+    background: var(--mint);
 }
 
 /* .cv::-webkit-scrollbar-thumb:hover {
@@ -69,7 +70,7 @@
 
 .cv a:hover {
     transition: 0.3s ease-in-out;
-    color: #325300;
+    color: var(--poppy);
 }
 
 .header {
@@ -306,13 +307,13 @@
     text-decoration: none;
     font-weight: 500;
     color: black;
-    background: var(--poppy);
+    background: var(--mint);
     border-radius: 2px;
     transition: 0.3s ease-in-out;
 }
 
 .pdf:hover {
-    box-shadow: var(--dusk) -5px 5px;
+    box-shadow: var(--poppy) -5px 5px;
 }
 
 .pdf:active {
