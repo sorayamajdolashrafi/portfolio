@@ -1,7 +1,7 @@
+/* phone */
 .header {
     height: 8rem;
     width: 100%;
-    /* background: coral; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     font-family: 'Spartan', sans-serif;
     letter-spacing: -0.2rem;
@@ -40,14 +40,29 @@
 }
 
 .header a:hover {
-    /* background: var(--poppy); */
     color: var(--poppy);
+    /* background: var(--poppy); */
     /* box-shadow: var(--poppy) -3px 3px; */
     /* border-bottom: var(--poppy) 3px solid; */
 }
 
-@media (max-width: 600px) {
+/* tablet */
+@media (min-width: 43em) {
     .header h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
+}
+
+/* laptop */
+@media (min-width: 62em) {
+    .header h1 {
+        font-size: 3rem;
+    }
+}
+
+/* desktop */
+@media (min-width: 82em) {
+    .header h1 {
+        font-size: 3rem;
+    }    
 }

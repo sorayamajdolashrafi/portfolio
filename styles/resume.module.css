@@ -1,6 +1,7 @@
+/* phone */
 .cv {
     height: 90%;
-    width: 50%;
+    width: 95%;
     overflow: scroll;
     display: grid;
     grid-template-rows: 1fr 4fr;
@@ -16,7 +17,6 @@
     border-radius: 3px;
     /* disable width scroll when site is scalable  */
 }
-
 
 .cv::-webkit-scrollbar-track {
     background: var(--mint);
@@ -73,229 +73,6 @@
     color: var(--poppy);
 }
 
-.header {
-    width: 100%;
-    height: auto;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
-}
-
-.contact {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact ul {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.contact li {
-    margin-top: 0.2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.contact a {
-    text-decoration: none;
-    color: black;
-}
-
-.icon {
-    margin-right: 0.5rem;
-    font-size: rem;
-}
-
-.tech {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.technologies {
-    width: 95%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.technologies li {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.tech p {
-    margin: 0;
-    padding: 0;
-}
-
-.specifics li {
-    margin: 0;
-    padding: 0;
-    margin-top: 0.1rem;
-}
-
-.projects {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.builds {
-    width: 95%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.builds li {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.projectHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.projectHeader a {
-    color: black;
-    margin-right: 0.3rem;
-}
-
-.projectHeader p {
-    margin: 0;
-    margin-right: 0.3rem;
-}
-
-.projectTag {
-    margin: 0;
-    padding: 0;
-    font-style: italic;
-}
-
-.contributions {
-    margin-top: 0.3rem;
-}
-
-.contributions li {
-    margin: 0;
-    margin-left: 1.1rem;
-    margin-bottom: 0.3rem;
-    list-style: disc;
-}
-
-.contributions p {
-    margin: 0;
-    padding: 0;
-}
-
-.experience {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.experience p {
-    margin: 0;
-    padding: 0;
-}
-
-.jobHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 0.3rem;
-}
-
-.job {
-    width: 95%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.job li {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.skills {
-    margin: 0;
-    padding: 0;
-    margin-top: 0.3rem;
-}
-
-.skills li {
-    margin: 0;
-    margin-left: 1.1rem;
-    margin-bottom: 0.3rem;
-    padding: 0;
-    list-style: disc;
-}
-
-.education {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.education p {
-    margin: 0;
-    margin-bottom: 0.1rem;
-    padding: 0;
-}
-
-.education ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.education li {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.school {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0.2rem;
-}
-
 .pdf {
     width: 4rem;
     margin: 1rem;
@@ -321,10 +98,245 @@
     transform: translate3d(-5px, 5px, 0);
 }
 
-@media (max-width: 600px) {
+/* tablet */
+@media (min-width: 43em) {
+
+    
+}
+
+/* laptop */
+@media (min-width: 62em) {
+
+    
+}
+
+/* desktop */
+@media (min-width: 82em) {
     .cv {
         height: 90%;
-        width: 95%;
+        width: 50%;
     }
-    
+
+    .header {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+
+    .contact {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact ul {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contact li {
+        margin-top: 0.2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .contact a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .icon {
+        margin-right: 0.5rem;
+        font-size: rem;
+    }
+
+    .tech {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .technologies {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .technologies li {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .tech p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .specifics li {
+        margin: 0;
+        padding: 0;
+        margin-top: 0.1rem;
+    }
+
+    .projects {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .builds {
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .builds li {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .projectHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .projectHeader a {
+        color: black;
+        margin-right: 0.3rem;
+    }
+
+    .projectHeader p {
+        margin: 0;
+        margin-right: 0.3rem;
+    }
+
+    .projectTag {
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+    }
+
+    .contributions {
+        margin-top: 0.3rem;
+    }
+
+    .contributions li {
+        margin: 0;
+        margin-left: 1.1rem;
+        margin-bottom: 0.3rem;
+        list-style: disc;
+    }
+
+    .contributions p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .experience {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .jobHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0.3rem;
+    }
+
+    .job {
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .job li {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .skills {
+        margin: 0;
+        padding: 0;
+        margin-top: 0.3rem;
+    }
+
+    .skills li {
+        margin: 0;
+        margin-left: 1.1rem;
+        margin-bottom: 0.3rem;
+        padding: 0;
+        list-style: disc;
+    }
+
+    .education {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .education p {
+        margin: 0;
+        margin-bottom: 0.1rem;
+        padding: 0;
+    }
+
+    .education ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .education li {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .school {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0.2rem;
+    }
 }
