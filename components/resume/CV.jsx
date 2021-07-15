@@ -97,12 +97,11 @@ const CV = props => {
                         <li key={job.title}>
                             <div className={styles.jobHeader}>
                                 <h4>{job.title}</h4>
-                                <p>| {job.location}</p>
-                                {/* {
-                                    job.location ? 
-                                    <p>| {job.location}</p> 
+                                {
+                                    job.place ? 
+                                    <p>| {job.place}</p> 
                                     : null
-                                } */}
+                                }
                                 <p>| {job.year}</p>
                             </div>
                             <ul className={styles.skills}>

@@ -1,22 +1,4 @@
 /* phone */
-
-/* tablet */
-@media (min-width: 43em) {
-
-    
-}
-
-/* laptop */
-@media (min-width: 62em) {
-
-    
-}
-
-/* desktop */
-@media (min-width: 82em) {
-
-}
-
 .moonCradle {
     width: 100%;
     height: 100%;
@@ -24,7 +6,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    overflow: scroll;
+    overflow: hidden; /*delete line after scalability implemented*/
 }
 
 .moon {
@@ -121,4 +103,21 @@
     font-size: 1.1rem;
     text-align: left;
     margin: 0;
+}
+
+/* tablet */
+@media (min-width: 43em) {
+
+    
+}
+
+/* laptop */
+@media (min-width: 62em) {
+
+    
+}
+
+/* desktop */
+@media (min-width: 82em) {
+
 }
