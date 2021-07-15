@@ -18,6 +18,7 @@ const ConnectControls = ({ handleOpenEmail }) => {
                     >
                         <EmailIcon fontSize="large"/>
                 </button>
+                <p>email</p>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/soraya-benson/" 
@@ -28,6 +29,7 @@ const ConnectControls = ({ handleOpenEmail }) => {
                     >
                     <LinkedInIcon fontSize="large"/>
                 </a>
+                <p>linkedin</p>
             </li>
             <li>
                 <a href="https://github.com/sorayabenson" 
@@ -38,6 +40,7 @@ const ConnectControls = ({ handleOpenEmail }) => {
                     >
                     <GitHubIcon fontSize="large"/>
                 </a>
+                <p>github</p>
             </li>
             <li>
                 <a href="/resume"
@@ -46,6 +49,7 @@ const ConnectControls = ({ handleOpenEmail }) => {
                     >
                     <DescriptionIcon fontSize="large"/>
                 </a>
+                <p>cv</p>
             </li>
             <li>
                 <a href="https://twitter.com/sorayamajd" 
@@ -56,6 +60,7 @@ const ConnectControls = ({ handleOpenEmail }) => {
                     >
                     <TwitterIcon fontSize="large"/>
                 </a>
+                <p>twitter</p>
             </li>
         </ul>
     )
