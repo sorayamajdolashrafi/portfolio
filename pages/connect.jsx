@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ConnectControls from '../components/connect/ConnectControls';
 import Form from '../components/connect/Form';
 
@@ -8,6 +8,8 @@ export default function Connect() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [sent, setSent] = useState(false);
+    const [error, setError] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const openEmail = () => {
         setForm(true);
@@ -22,9 +24,8 @@ export default function Connect() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        console.log(sender, email, message);
-
         let data = { sender, email, message };
+        setLoading(true);
 
         fetch('/api/contact', {
             method: 'POST',
@@ -34,12 +35,14 @@ export default function Connect() {
             },
             body: JSON.stringify(data)
         }).then((res) => {
-            console.log('response!')
             if (res.status === 200) {
                 console.log('woohoo!')
                 setSent(true);
+            } else {
+                console.log('heartbreakcity')
+                setError(true);
             }
-        });
+        }).then(setLoading(false));
     }
 
     return (
@@ -55,6 +58,8 @@ export default function Connect() {
                     email={email}
                     message={message}
                     sent={sent}
+                    error={error}
+                    loading={loading}
                     />
                 : <ConnectControls handleOpenEmail={openEmail}/>
             }

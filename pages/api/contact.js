@@ -1,44 +1,53 @@
+require('dotenv').config();
+
 export default function (req, res) {
-    require('dotenv').config();
-
-    const PASSWORD = process.env.PASSWORD;
-    const EMAIL = process.env.EMAIL;
-    const DEVMAIL = process.env.DEVMAIL
-
-    let nodemailer = require('nodemailer');
-    const transporter = nodemailer.createTransport({
-        port: 465,
-        host: 'smtp.gmail.com',
-        auth: {
-            user: DEVMAIL,
-            pass: PASSWORD
-        },
-        secure: true,
-    });
-
-    const mailData = {
-        from: DEVMAIL,
-        to: EMAIL,
-        subject: `Hey cutie, ${req.body.sender} sent you a message from your dev site`,
-        text: req.body.message + " | sent from: " + req.body.email,
-        html: `<div>
-                <h1 style="font-family: 'IBM Plex Sans', sans-serif;
-                font-size: 16px; font-weight: 600">from: ${req.body.sender}</h1>
-                <h2 style="font-family: 'IBM Plex Sans', sans-serif;
-                font-size: 14px; font-weight: 600">${req.body.email}</h2>
-                <p style="font-family: 'IBM Plex Sans', sans-serif;
-                font-size: 14px; font-weight: 400">${req.body.message}</p>
-            </div>`
-    };
-
-    transporter.sendMail(mailData, function (err, info) {
-        if(err) {
-            console.log(err)
-        } else {
-            console.log(info)
-        }
-        res.status(200)
+    return new Promise(resolve => {
+        const PASSWORD = process.env.PASSWORD;
+        const DEVMAIL = process.env.DEVMAIL
+    
+        let nodemailer = require('nodemailer');
+        const transporter = nodemailer.createTransport({
+            port: 465,
+            host: 'smtp.gmail.com',
+            auth: {
+                user: DEVMAIL,
+                pass: PASSWORD
+            },
+            secure: true,
+        });
+    
+        const mailData = {
+            from: DEVMAIL,
+            to: 'hello@sorayabenson.com',
+            replyTo: `${req.body.email}`,
+            subject: `${req.body.sender} sent you a message from your dev site!`,
+            text: req.body.message + " | sent from: " + req.body.email,
+            html: `<div style="width: 85%; height: auto; border: #FFD401 15px solid; padding: 1rem;">
+    
+                    <p style="font-family:'IBM Plex Sans', sans-serif; font-size: 14px; font-weight: 400">
+                            ${req.body.message}
+                    </p>
+                        
+                    <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-weight: 500; color: #0A2728;">
+                        from: ${req.body.sender} ${req.body.email}
+                    </h1>
+                    
+                </div>`
+        };
+    
+        transporter.sendMail(mailData, function (err, info) {
+            if(err) {
+                console.log(err)
+                resolve();
+            } else {
+                console.log(info)
+                resolve();
+            }
+        })
+       
+        console.log(req.body)
+        res.status(200).end();
+        return resolve();
     })
     
-    console.log(req.body)
 }

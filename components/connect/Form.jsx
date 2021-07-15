@@ -2,15 +2,18 @@ import PropTypes from 'prop-types';
 import styles from '../../styles/connect.module.css';
 import CancelIcon from '@material-ui/icons/Cancel';
 
-const Form = ( { handleSendEmail, handleCloseEmail, sender, onSenderChange, email, onEmailChange, message, onMessageChange, sent } ) => {
+const Form = ( { handleSendEmail, handleCloseEmail, sender, onSenderChange, email, onEmailChange, message, onMessageChange, sent, error, loading } ) => {
     return (
         <section className={styles.form}>
             <button onClick={handleCloseEmail}><CancelIcon /></button>
             {
-                sent ? 
+                loading ? 
+                <p>loading...</p>
+                : sent ? 
                 <p>thanks for your message {sender} {email} {message}</p>
-                : 
-                <form onSubmit={handleSendEmail}>
+                : error ?
+                <p>yikes, something went wrong! send me a direct email to hello@sorayabenson.com</p>
+                : <form onSubmit={handleSendEmail}>
                     <input 
                         type="text"
                         value={sender}
