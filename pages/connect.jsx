@@ -24,6 +24,8 @@ export default function Connect() {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        //add error if no info in name and email. is this here or in the form html?
+
         let data = { sender, email, message };
         setLoading(true);
 

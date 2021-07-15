@@ -11,10 +11,6 @@
     list-style: none;
 }
  
-.connect button {
-    border: none;
-}
-
 .connect p {
     font-size: 1.1rem;
     font-weight: 600;
@@ -30,7 +26,6 @@
     padding: 2rem;
     border-radius: 50%;
     color: black;
-    cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
@@ -41,6 +36,168 @@
 .buttons:active {
     box-shadow: transparent 0px 0px;
     transform: translate3d(-5px, 5px, 0);
+}
+
+.form {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: var(--moon) 15px solid;
+    padding: 1rem;
+    transition: 0.3 ease-in-out;
+}
+
+.closeWrapper {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.close {
+    margin: 0.5rem;
+    color: var(--dusk);
+    background: var(--moon);
+    transition: 0.3s ease-in-out;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close:hover {
+    box-shadow: var(--poppy) -3px 3px;
+}
+
+.close:active {
+    box-shadow: transparent 0px 0px;
+    transform: translate3d(-3px, 3px, 0);
+}
+
+.form form {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 9fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+.sendWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    width: 4rem;
+    height: auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background: var(--mint);
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.send:hover {
+    box-shadow: var(--poppy) -5px 5px;
+}
+
+.send:active {
+    box-shadow: transparent 0px 0px;
+    transform: translate3d(-5px, 5px, 0);
+}
+
+.message {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    resize: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+.message::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 3px;
+    /* disable width scroll when site is scalable  */
+}
+
+.message::-webkit-scrollbar-track {
+    background: var(--mint);
+    border: white 3px solid;
+}
+
+.message::-webkit-scrollbar-thumb {
+    height: 50px;
+    background: var(--mint);
+}
+
+.senderWrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sent {
+    width: 100%;
+    height: auto;
+}
+
+.sentMessage {
+    border: var(--mint) 3px solid;
+    background: white;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.error {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.error a {
+    color: black;
+    text-decoration: underline var(--poppy);
+    transition: 0.2 ease-in-out;
+}
+
+.error a:hover {
+    color: var(--poppy);
 }
 
 /* tablet */
@@ -63,5 +220,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .form {
+        width: 40%;
+        height: auto;
     }
 }
