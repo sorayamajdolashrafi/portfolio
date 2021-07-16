@@ -28,7 +28,7 @@ const CV = props => {
                     </li>
                     <li key="email">
                         <EmailIcon fontSize="small" className={styles.icon}/>
-                        <a href="mailto:soraya.benson@gmail.com" target="_blank">email</a>
+                        <a href="mailto:hello@sorayabenson.com" target="_blank">hello@sorayabenson.com</a>
                     </li>
                     <li key="phone">
                         <PhoneInTalkIcon fontSize="small" className={styles.icon}/>

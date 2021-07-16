@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styles from '../../styles/connect.module.css';
-import Link from 'next/link';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';

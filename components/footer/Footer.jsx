@@ -1,4 +1,5 @@
 import styles from '../../styles/Footer.module.css';
+import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -6,6 +7,12 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 const Footer = () => {
     return (
         <footer className={styles.footer}>
+            <a href="mailto:hello@sorayabenson.com" 
+                role="button"
+                target="_blank"
+                aria-label="link to email">
+                <EmailIcon />
+            </a>
             <a href="https://www.linkedin.com/in/soraya-benson/" 
                 role="button"
                 target="_blank"

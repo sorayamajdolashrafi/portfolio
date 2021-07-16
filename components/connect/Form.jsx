@@ -44,7 +44,7 @@ const Form = ( { handleSendEmail, handleCloseEmail, sender, onSenderChange, emai
                         placeholder="message"
                         className={styles.message}></textarea>
                     <div className={styles.sendWrapper}>
-                        <button className={styles.send}>send</button>
+                        <button className={styles.send} disabled={!sender || !email || !message}>send</button>
                     </div>
                 </form>
             }

@@ -129,6 +129,14 @@
     transform: translate3d(-5px, 5px, 0);
 }
 
+.send:disabled {
+    opacity: 50%;
+}
+
+.send:disabled:hover {
+    box-shadow: none;
+}
+
 .message {
     width: 100%;
     height: 100%;

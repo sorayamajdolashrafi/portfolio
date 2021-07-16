@@ -14,6 +14,13 @@ const Bio = props => {
             <p className={styles.p3}>
                 Right now I'm really into learning about how to make the internet accesible. Off the internet I'm learning how to actually weave tiny carpets.
             </p>
+
+            <div className={styles.p4}>
+                <p>
+                    You can reach me at
+                </p>
+                <a href="mailto:hello@sorayabenson.com" target="_blank">hello@sorayabenson.com</a>
+            </div>
         </section>
     )
 }
