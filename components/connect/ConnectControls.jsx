@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import styles from '../../styles/connect.module.css';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -6,18 +5,19 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import DescriptionIcon from '@material-ui/icons/Description';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
-const ConnectControls = ({ handleOpenEmail }) => {
+const ConnectControls = () => {
     return (
         <ul className={styles.connect}>
             <li>
-                <button 
-                    onClick={handleOpenEmail}
-                    aria-label="open email form"
+                <a href="mailto:hello@sorayabenson.com" 
+                    role="button"
+                    target="_blank"
+                    aria-label="link to email"
                     className={styles.buttons}
                     >
                         <EmailIcon fontSize="large"/>
-                </button>
-                <p>email</p>
+                </a>
+                {/* <p>email</p> */}
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/soraya-benson/" 
@@ -28,7 +28,7 @@ const ConnectControls = ({ handleOpenEmail }) => {
                     >
                     <LinkedInIcon fontSize="large"/>
                 </a>
-                <p>linkedin</p>
+                {/* <p>linkedin</p> */}
             </li>
             <li>
                 <a href="https://github.com/sorayabenson" 
@@ -39,7 +39,7 @@ const ConnectControls = ({ handleOpenEmail }) => {
                     >
                     <GitHubIcon fontSize="large"/>
                 </a>
-                <p>github</p>
+                {/* <p>github</p> */}
             </li>
             <li>
                 <a href="/resume"
@@ -48,7 +48,7 @@ const ConnectControls = ({ handleOpenEmail }) => {
                     >
                     <DescriptionIcon fontSize="large"/>
                 </a>
-                <p>cv</p>
+                {/* <p>cv</p> */}
             </li>
             <li>
                 <a href="https://twitter.com/sorayamajd" 
@@ -59,14 +59,10 @@ const ConnectControls = ({ handleOpenEmail }) => {
                     >
                     <TwitterIcon fontSize="large"/>
                 </a>
-                <p>twitter</p>
+                {/* <p>twitter</p> */}
             </li>
         </ul>
     )
-}
-
-ConnectControls.propTypes = {
-    handleOpenEmail: PropTypes.func.isRequired
 }
 
 export default ConnectControls;
