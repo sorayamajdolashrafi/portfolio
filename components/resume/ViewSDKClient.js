@@ -45,7 +45,7 @@ class ViewSDKClient {
             content: {
                 /* Location of file where it is hosted */
                 location: {
-                    url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf",
+                    url: "SorayaBensonResume2021.pdf",
                     /*
                     If the file URL requires some additional headers, then it can be passed as follows:-
                     headers: [
@@ -60,9 +60,9 @@ class ViewSDKClient {
             /* Pass meta data of file */
             metaData: {
                 /* file name */
-                fileName: "Bodea Brochure.pdf",
+                fileName: "SorayaBensonResume2021",
                 /* file ID */
-                id: "6d07d124-ac85-43b3-a867-36930f502ac6",
+                id: "1",
             }
         }, viewerConfig);
 
