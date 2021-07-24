@@ -9,6 +9,7 @@ written permission of Adobe.
 */
 
 class ViewSDKClient {
+    // require('dotenv').config();
     constructor() {
         this.readyPromise = new Promise((resolve) => {
             if (window.AdobeDC) {
@@ -30,7 +31,7 @@ class ViewSDKClient {
     previewFile(divId, viewerConfig) {
         const config = {
             /* Pass your registered client id */
-            clientId: `${process.env.DEV_ADOBE_KEY}`,
+            clientId: "d08eb1e11d084244819c22f5389b6af6",
         };
         if (divId) { /* Optional only for Light Box embed mode */
             /* Pass the div id in which PDF should be rendered */
@@ -73,7 +74,7 @@ class ViewSDKClient {
         /* Initialize the AdobeDC View object */
         this.adobeDCView = new window.AdobeDC.View({
             /* Pass your registered client id */
-            clientId: `${process.env.DEV_ADOBE_KEY}`,
+            clientId: "d08eb1e11d084244819c22f5389b6af6",
             /* Pass the div id in which PDF should be rendered */
             divId,
         });
