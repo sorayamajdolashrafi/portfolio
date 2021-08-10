@@ -8,7 +8,7 @@ then your use, modification, or distribution of it requires the prior
 written permission of Adobe.
 */
 
-require('dotenv').config();
+// require('dotenv').config();
 
 class ViewSDKClient {
     constructor() {
