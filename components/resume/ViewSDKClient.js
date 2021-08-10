@@ -7,6 +7,7 @@ it. If you have received this file from a source other than Adobe,
 then your use, modification, or distribution of it requires the prior
 written permission of Adobe.
 */
+
 require('dotenv').config();
 
 class ViewSDKClient {
