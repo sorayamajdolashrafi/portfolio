@@ -8,8 +8,6 @@ then your use, modification, or distribution of it requires the prior
 written permission of Adobe.
 */
 
-// require('dotenv').config();
-
 class ViewSDKClient {
     constructor() {
         this.readyPromise = new Promise((resolve) => {
@@ -32,7 +30,7 @@ class ViewSDKClient {
     previewFile(divId, viewerConfig) {
         const config = {
             /* Pass your registered client id */
-            clientId: "d08eb1e11d084244819c22f5389b6af6",
+            clientId: process.env.DEV_ADOBE_KEY,
         };
         if (divId) { /* Optional only for Light Box embed mode */
             /* Pass the div id in which PDF should be rendered */
@@ -75,7 +73,7 @@ class ViewSDKClient {
         /* Initialize the AdobeDC View object */
         this.adobeDCView = new window.AdobeDC.View({
             /* Pass your registered client id */
-            clientId: "d08eb1e11d084244819c22f5389b6af6",
+            clientId: process.env.DEV_ADOBE_KEY,
             /* Pass the div id in which PDF should be rendered */
             divId,
         });
