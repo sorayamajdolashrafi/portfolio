@@ -7,6 +7,9 @@ it. If you have received this file from a source other than Adobe,
 then your use, modification, or distribution of it requires the prior
 written permission of Adobe.
 */
+// const key = process.env.NEXT_PUBLIC_DEV_ADOBE_KEY
+const key = 'd08eb1e11d084244819c22f5389b6af6';
+console.log(key);
 
 class ViewSDKClient {
     constructor() {
@@ -30,7 +33,8 @@ class ViewSDKClient {
     previewFile(divId, viewerConfig) {
         const config = {
             /* Pass your registered client id */
-            clientId: process.env.NEXT_PUBLIC_DEV_ADOBE_KEY,
+            // clientId: `${process.env.NEXT_PUBLIC_DEV_ADOBE_KEY}`,
+            clientId: "d08eb1e11d084244819c22f5389b6af6",
         };
         if (divId) { /* Optional only for Light Box embed mode */
             /* Pass the div id in which PDF should be rendered */
@@ -73,7 +77,8 @@ class ViewSDKClient {
         /* Initialize the AdobeDC View object */
         this.adobeDCView = new window.AdobeDC.View({
             /* Pass your registered client id */
-            clientId: process.env.NEXT_PUBLIC_DEV_ADOBE_KEY,
+            // clientId: `${process.env.NEXT_PUBLIC_DEV_ADOBE_KEY}`,
+            clientId: "d08eb1e11d084244819c22f5389b6af6",
             /* Pass the div id in which PDF should be rendered */
             divId,
         });
