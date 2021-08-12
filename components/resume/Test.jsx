@@ -1,15 +1,11 @@
-import { useState, useEffect } from 'react';
 import InLine from './InLine';
-import Script from 'next/script';
+import { Document } from 'react-pdf';
 
 const Test = () => {
     return (
         <div>
             <InLine />
-            {/* <Script 
-                src="https://documentcloud.adobe.com/view-sdk/main.js"
-                strategy="lazyOnload"    
-            /> */}
+            {/* <Document file="../../public/SorayaBensonResume2021.pdf" /> */}
         </div>
     )
 }
