@@ -1,11 +1,10 @@
 import InLine from './InLine';
-import { Document } from 'react-pdf';
 
 const Test = () => {
     return (
         <div>
+            <h1>test</h1>
             <InLine />
-            {/* <Document file="../../public/SorayaBensonResume2021.pdf" /> */}
         </div>
     )
 }
