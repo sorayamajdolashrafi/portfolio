@@ -20,7 +20,10 @@ const Header = () => {
             <Link href='/connect'>
                 connect
             </Link>
-            <Link href='/resume'>
+            <Link 
+                href='/resume'
+                // href='/SorayaBensonResume2021.pdf'  target='_blank'
+            >
                 cv
             </Link>
         </nav>

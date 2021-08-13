@@ -9,16 +9,18 @@ class AdobePdf extends Component {
             /* Invoke file preview */
             viewSDKClient.previewFile("pdf-div", {
                 /* Pass the embed mode option here */
-                embedMode: "IN_LINE"
+                // embedMode: "IN_LINE"
+                embedMode: "SIZED_CONTAINER"
             });
         });
     }
 
     render() {
         return (
-            <div className="in-line-container">
-                <div id="pdf-div" className="in-line-div"/>
-            </div>
+            // <div className="in-line-container">
+            //     <div id="pdf-div" className="in-line-div"/>
+            // </div>
+            <div id="pdf-div" className="sized-container-div"/>
         );
     }
 }

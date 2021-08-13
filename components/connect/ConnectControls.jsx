@@ -42,7 +42,10 @@ const ConnectControls = () => {
                 {/* <p>github</p> */}
             </li>
             <li>
-                <a href="/resume"
+                <a 
+                    href='/resume'
+                    // href='/SorayaBensonResume2021.pdf'  
+                    // target='_blank'
                     aria-label="a to resume"
                     className={styles.buttons}
                     >
