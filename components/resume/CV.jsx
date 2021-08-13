@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import AdobePdf from './AdobePdf';
+import styles from '../../styles/resume.module.css';
 
 const CV = () => {
     useEffect(() => {
@@ -11,7 +12,9 @@ const CV = () => {
     }, [])
 
     return (
+        <div className={styles.pdfWrapper}>
         <AdobePdf />
+        </div>
     );
 }
 

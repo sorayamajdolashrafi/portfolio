@@ -5,11 +5,11 @@ export default function Resume() {
     return (
         <main className="page">
             <CV />
-            <a 
+            {/* <a 
                 className={styles.pdf}
                 href='/SorayaBensonResume2021.pdf'  target='_blank'>
                     pdf
-            </a>
+            </a> */}
         </main>
     )
 }
