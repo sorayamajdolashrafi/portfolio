@@ -46,15 +46,6 @@ class ViewSDKClient {
                 /* Location of file where it is hosted */
                 location: {
                     url: "SorayaBensonResume2021.pdf",
-                    /*
-                    If the file URL requires some additional headers, then it can be passed as follows:-
-                    headers: [
-                        {
-                            key: "<HEADER_KEY>",
-                            value: "<HEADER_VALUE>",
-                        }
-                    ]
-                    */
                 },
             },
             /* Pass meta data of file */
