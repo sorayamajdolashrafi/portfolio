@@ -6,6 +6,7 @@ const CV = () => {
         const script = document.createElement("script");
         script.src = "https://documentcloud.adobe.com/view-sdk/main.js";
         script.async = true;
+        script.type = "text/javascript";
         document.body.appendChild(script);
     }, [])
 
@@ -13,7 +14,5 @@ const CV = () => {
         <AdobePdf />
     );
 }
-
-
 
 export default CV;
