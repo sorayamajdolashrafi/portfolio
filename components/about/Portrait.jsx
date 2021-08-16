@@ -4,7 +4,7 @@ import styles from '../../styles/about.module.css';
 const Portrait = props => {
     return (
         <section className={styles.portrait}>
-            <img src='portrait.png' alt='black and white photobooth strip with 4 portraits of soraya' />  
+            <img src='soraya.jpg' alt='black and white photobooth strip with 4 portraits of soraya' />  
         </section>
     )
 }

@@ -30,7 +30,7 @@ class ViewSDKClient {
     previewFile(divId, viewerConfig) {
         const config = {
             /* Pass your registered client id */
-            clientId: "d08eb1e11d084244819c22f5389b6af6",
+            clientId: "d08eb1e11d084244819c22f5389b6af6", //TODO change to live site key when ready to push to main 
         };
         if (divId) { /* Optional only for Light Box embed mode */
             /* Pass the div id in which PDF should be rendered */
@@ -51,7 +51,7 @@ class ViewSDKClient {
             /* Pass meta data of file */
             metaData: {
                 /* file name */
-                fileName: "SorayaBensonResume2021",
+                fileName: "Soraya Benson Resume",
                 /* file ID */
                 id: "1",
             }
@@ -64,7 +64,7 @@ class ViewSDKClient {
         /* Initialize the AdobeDC View object */
         this.adobeDCView = new window.AdobeDC.View({
             /* Pass your registered client id */
-            clientId: "d08eb1e11d084244819c22f5389b6af6",
+            clientId: "d08eb1e11d084244819c22f5389b6af6", //TODO change to live site key when ready to push to main
             /* Pass the div id in which PDF should be rendered */
             divId,
         });

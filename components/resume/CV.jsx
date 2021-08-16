@@ -13,7 +13,7 @@ const CV = () => {
 
     return (
         <div className={styles.pdfWrapper}>
-        <AdobePdf />
+        <AdobePdf /> 
         </div>
     );
 }
