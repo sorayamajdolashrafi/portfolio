@@ -1,10 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 const ProjectSlide = props => {
     return (
         <div>
-            
+           <h2>slide</h2> 
         </div>
     )
 }
@@ -13,4 +12,4 @@ ProjectSlide.propTypes = {
 
 }
 
-export default ProjectSlide
+export default ProjectSlide;

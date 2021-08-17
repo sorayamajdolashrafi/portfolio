@@ -1,9 +1,23 @@
-import styles from '../styles/projects.module.css';
+import { useState } from 'react';
+import ProjectControls from '../components/projects/ProjectControls.jsx';
+import ProjectList from '../components/projects/ProjectList.jsx';
+import ProjectGallery from '../components/projects/ProjectGallery.jsx';
 
 export default function Projects() {
+    const [ view, setView ] = useState(true)
+
+    const handleView = () => {
+        view ? setView(false)
+        : setView(true);
+    }
+
     return (
         <main className="page">
-            <h1>oh no, projects</h1>
+            <ProjectControls updateView={handleView} view={view}/>
+            {
+                view ? <ProjectGallery />
+                : <ProjectList />
+            }
         </main>
     )
 }

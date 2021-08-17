@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    overflow: hidden; /*delete line after scalability implemented*/
+    overflow: hidden; /*TODO delete line after scalability implemented*/
 }
 
 .moon {

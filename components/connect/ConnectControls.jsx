@@ -46,7 +46,7 @@ const ConnectControls = () => {
                     href='/resume'
                     // href='/SorayaBensonResume2021.pdf'  
                     // target='_blank'
-                    aria-label="a to resume"
+                    aria-label="link to resume"
                     className={styles.buttons}
                     >
                     <DescriptionIcon fontSize="large"/>
