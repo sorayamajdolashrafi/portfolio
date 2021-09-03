@@ -1,67 +1,111 @@
 /* phone */
-.controls {
+.projects {
     width: 60%;
-    height: auto;
+    height: 100%;
+    background: var(--moon);
+    margin: 0;
+    padding: 0;
+}
+
+.project {
+    list-style: none;
+    padding: 1.5rem;
+    margin: 1rem;
+    border: var(--poppy) 3px solid;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
-.grid {
-    width: 60%;
-    height: 100%;
+.project h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
 }
 
-.gallery {
-    width: 60%;
-    height: 100%;
+.project h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-.switch {
+/* switch to these when editing back design */
+/* .back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    display: none;
+} */
+
+.links {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--dusk);
+}
+
+.links a:hover {
+    color: var(--poppy);
+    transition: 0.3s ease-in-out;
+}
+
+.carousel {
     position: relative;
-    display: inline-block;
-    width: 4.4rem;
-    height: 2.4rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
 }
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
+.arrows {
+    color: var(--dusk);
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--poppy);
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
+    z-index: 2;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 2rem;
-    width: 2rem;
-    left: .2rem;
-    bottom: .2rem;
-    background: var(--dusk);
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
+.arrows:hover {
+    color: var(--poppy);
+    transition: 0.3s ease-in-out;
 }
 
-.switch input:checked + .slider{
-    background: var(--moon);
+
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.switch input:checked + .slider:before {
-    transform: translateX(2rem);
-    -webkit-transform: translateX(2rem);
-    -ms-transform: translateX(2rem);
+.back {
+    display: none;
+}
+
+.project:hover .back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project:hover .front {
+    display: none;
 }
 
 /* tablet */

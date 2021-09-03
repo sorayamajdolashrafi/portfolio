@@ -1,0 +1,161 @@
+[
+    {
+        "id": 1,
+        "name": "beatWavez",
+        "github": "https://github.com/the-treblemakers/BeatWavez-FE",
+        "site": "https://beatwavez.com/",
+        "tech": "React | Material UI | Socket.IO | Express",
+        "tag": "A karaoke party app, where users can create and join party rooms, chat, and add songs to a shared queue.",
+        "contributions": [
+            "Remotely mob and pair programmed with a team of five in a two week sprint.",
+            "Wielded the power of the Material UI library to implement the mobile first design."
+        ],
+        "images": [
+            { 
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
+                "alt" : "skate ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
+                "alt": "human ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
+                "alt":"skate ghost"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Pixel Pusher",
+        "github": "https://github.com/st-ART-up/the-canvas",
+        "site": "https://www.npmjs.com/package/@st-art-up/pixel-pusher",
+        "tech": "Express | Blessed | Node.js",
+        "tag": "Pixel Pusher is an art app for the terminal, remotely mob and pair programmed in a two week sprint.",
+        "contributions": [
+            "Strategically organized the file structure to maintain navigable code.",
+            "Devised the base brush shape whose style and size is modified through multiple parameters to create other brushes."
+        ],
+        "images": [
+            { 
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
+                "alt" : "skate ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
+                "alt": "human ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
+                "alt":"skate ghost"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Else By Elsewhere",
+        "github": "https://github.com/where-in-the-search",
+        "site": "https://else-by-elsewhere.netlify.app",
+        "tech": "React | Express | PostgreSQL",
+        "tag": "Else By Elsewhere is a geo guessing game built in a remote one week sprint on a team of four.",
+        "contributions": [
+            "Wove together multiple APIs to create our own RESTful API for this full-stack React app.",
+            "Built the wireframes, implemented the design, and used my sharp eye for detail to catch bugs and refactor to create cleaner code."
+        ],
+        "images": [
+            { 
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
+                "alt" : "skate ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
+                "alt": "human ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
+                "alt":"skate ghost"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Vampire Match",
+        "github": "https://github.com/UniKittyCorns/MemoryCardGame",
+        "site": "https://vampirematch.netlify.app",
+        "tech": "HTML | CSS | JavaScript",
+        "tag": "Vampire Match is a classic memory card matching game built with vanilla JavaScript.",
+        "contributions": [
+            "Remotely mob programed on a team of 4 in one week.",
+            "Designed the custom deck of cards.",
+            "Developed the CSS animation to flip the card over to reveal thefront, and integrated it with the JavaScript function to determine if the cards were a match."
+        ],
+        "images": [
+            { 
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
+                "alt" : "skate ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
+                "alt": "human ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
+                "alt":"skate ghost"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Font Folder",
+        "github": "https://github.com/sorayabenson/font-folder",
+        "site": "https://font-folder.netlify.app/",
+        "tech": "React | Express | PostgreSQL",
+        "tag": "Save and organize your favorite google fonts to find them quickly later!",
+        "contributions": [
+            "I built this fullstack app in one week.",
+            "Something about how it works.",
+            "revisit this after completing the project"
+        ],
+        "images": [
+            { 
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
+                "alt" : "skate ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
+                "alt": "human ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
+                "alt":"skate ghost"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Personal Ghosts",
+        "github": "https://github.com/sorayabenson/personal-ghosts-adventure-game",
+        "site": "https://sorayabenson.github.io/personal-ghosts-adventure-game/",
+        "tech": "HTML | CSS | JavaScript",
+        "tag": "When your are disconnected from your spirit, how does the body find its way home?",
+        "contributions": [
+            "A choose your own adventure game.",
+            "artwork",
+            "tech process"
+        ],
+        "images": [
+            { 
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
+                "alt" : "skate ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
+                "alt": "human ghost"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
+                "alt":"skate ghost"
+            }
+        ]
+    }
+]

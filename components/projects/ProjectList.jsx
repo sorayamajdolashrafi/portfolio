@@ -1,13 +1,15 @@
 import ProjectItem from './ProjectItem.jsx';
 import styles from '../../styles/projects.module.css';
+import projects from './projects.json';
 
 
 const ProjectList = () => {
     return (
-        <div className={styles.grid}>
-            <h1>list</h1>
-            <ProjectItem />
-        </div>
+        <ul className={styles.projects}>
+            {projects.map((project) => {
+                return <ProjectItem {...project}/>
+            })}
+        </ul>
     )
 }
 
