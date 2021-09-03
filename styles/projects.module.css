@@ -1,13 +1,39 @@
 /* phone */
 .projects {
-    width: 60%;
+    width: 95%;
     height: 100%;
-    background: var(--moon);
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
+.projects::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 3px;
+    /* disable width scroll when site is scalable  */
+}
+
+.projects::-webkit-scrollbar-track {
+    background: var(--mint);
+    border: white 3px solid;
+}
+
+.projects::-webkit-scrollbar-thumb {
+    height: 50px;
+    background: var(--mint);
+}
+
+/* .projects::-webkit-scrollbar-thumb:hover {
+    border-bottom: var(--dusk) 3px solid;
+} */
+
 .project {
+    width: 45%;
+    height: 30rem;
     list-style: none;
     padding: 1.5rem;
     margin: 1rem;
@@ -31,8 +57,36 @@
     font-weight: 400;
 }
 
+.project:hover .back {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project:hover .front {
+    display: none;
+}
+
+.front {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    display: none;
+}
+
 /* switch to these when editing back design */
 /* .back {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +98,7 @@
 } */
 
 .links {
-    width: 95%;
+    width: 85%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -64,9 +118,8 @@
 }
 
 .carousel {
-    position: relative;
     width: 100%;
-    height: auto;
+    height: 19rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,42 +138,36 @@
     transition: 0.3s ease-in-out;
 }
 
-
-.front {
+.description {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.back {
-    display: none;
-}
-
-.project:hover .back {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.project:hover .front {
-    display: none;
+    align-items: right;
 }
 
 /* tablet */
 @media (min-width: 43em) {
-
+    .projects {
+        width: 80%;
+        height: 100%;
+    }
     
 }
 
 /* laptop */
 @media (min-width: 62em) {
-
-    
+    .projects {
+        width: 70%;
+        height: 100%;
+    }
 }
 
 /* desktop */
 @media (min-width: 82em) {
-    
+    .projects {
+        width: 60%;
+        height: 100%;
+    }
 }

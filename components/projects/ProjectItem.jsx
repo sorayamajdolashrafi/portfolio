@@ -7,15 +7,6 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 const ProjectItem = ({ name, github, site, tech, tag, contributions, images, }) => {
     const [current, setCurrent] = useState(0);
     const length = images.length;
-
-    // const slides = [];
-
-    // can I make a slide array with the images and a the description?
-    // map through contributions to make a a div 
-    // slides.push(contributions);
-    // slides.push(images);
-
-    // console.log(slides)
     
     const  previousImage = () => {
         setCurrent(current === 0 ? length - 1 : current - 1)
@@ -32,7 +23,7 @@ const ProjectItem = ({ name, github, site, tech, tag, contributions, images, }) 
                 <img src={images[0].src} alt={images[0].alt} />
                 <p>{tag}</p>
             </div>
-            
+
             <div className={styles.back}>
                 <h2>{name}</h2>
                 <h3>{tech}</h3>
@@ -42,8 +33,16 @@ const ProjectItem = ({ name, github, site, tech, tag, contributions, images, }) 
                         <ArrowLeftIcon fontSize="large"/>
                     </button>
 
-                    <img src={images[current].src} alt={images[current].alt} />
-
+                    {
+                        current === 0 ?
+                        <section className={styles.description}>
+                            {contributions.map(text => (
+                                <p>{text}</p>
+                            ))}
+                        </section>
+                        : <img src={images[current].src} alt={images[current].alt} />
+                    }
+                    
                     <button className={styles.arrows} onClick={nextImage}>
                         <ArrowRightIcon  fontSize="large"/>
                     </button>
