@@ -32,7 +32,7 @@
 } */
 
 .project {
-    width: 45%;
+    width: 95%;
     height: 30rem;
     list-style: none;
     padding: 1.5rem;
@@ -154,6 +154,9 @@
         height: 100%;
     }
     
+    .project {
+        width: 45%;
+    }
 }
 
 /* laptop */
@@ -162,6 +165,10 @@
         width: 70%;
         height: 100%;
     }
+
+    .project {
+        width: 45%;
+    }
 }
 
 /* desktop */
@@ -169,5 +176,9 @@
     .projects {
         width: 60%;
         height: 100%;
+    }
+
+    .project {
+        width: 45%;
     }
 }
