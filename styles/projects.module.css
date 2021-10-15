@@ -35,9 +35,9 @@
     width: 95%;
     height: 30rem;
     list-style: none;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     margin: 1rem;
-    border: var(--poppy) 3px solid;
+    /* border: var(--poppy) 3px solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +56,7 @@
     font-size: 1rem;
     font-weight: 400;
 }
-
+/* 
 .project:hover .back {
     height: 100%;
     width: 100%;
@@ -68,7 +68,7 @@
 
 .project:hover .front {
     display: none;
-}
+} */
 
 .front {
     height: 100%;
@@ -77,6 +77,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.front img {
+    width: 100%;
+    height: auto;
 }
 
 .back {

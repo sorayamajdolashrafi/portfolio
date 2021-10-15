@@ -12,18 +12,11 @@
         ],
         "images": [
             { 
-                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
-                "alt" : "skate ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
-                "alt": "human ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
-                "alt":"skate ghost"
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335802735-ZIM21LD2M83LHQ6LQNY1/beatwavez+logo.png?format=750w",
+                "alt" : "simple line art of two palms against a hot pink sunset, followed by the word beatWavez."
             }
-        ]
+        ],
+        "background": "#10042a"
     },
     {
         "id": 2,
@@ -38,18 +31,11 @@
         ],
         "images": [
             { 
-                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
-                "alt" : "skate ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
-                "alt": "human ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
-                "alt":"skate ghost"
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335829784-L32OMGTIJ30ZCJLCJPLW/pixel+pusher+logo.png?format=750w",
+                "alt" : "a terminal displays the rainbow pixel pusher logo."
             }
-        ]
+        ],
+        "background": "#fadfe6"
     },
     {
         "id": 3,
@@ -64,18 +50,11 @@
         ],
         "images": [
             { 
-                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
-                "alt" : "skate ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
-                "alt": "human ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
-                "alt":"skate ghost"
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335823727-DBSB9TVT9SANZFWGV7X7/else+by+elsewhere+logo.png?format=750w",
+                "alt" : "a classic stamp outline wraps around the words else by elsewhere"
             }
-        ]
+        ],
+        "background": "#fffaf7"
     },
     {
         "id": 4,
@@ -91,71 +70,10 @@
         ],
         "images": [
             { 
-                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
-                "alt" : "skate ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
-                "alt": "human ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
-                "alt":"skate ghost"
+                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335837812-ZROCLHPSL712ZTPP7C8A/vampire+match+logo.png?format=750w",
+                "alt" : "The words vampire match stretch over 4 match game cards."
             }
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Font Folder",
-        "github": "https://github.com/sorayabenson/font-folder",
-        "site": "https://font-folder.netlify.app/",
-        "tech": "React | Express | PostgreSQL",
-        "tag": "Save and organize your favorite google fonts to find them quickly later!",
-        "contributions": [
-            "I built this fullstack app in one week.",
-            "Something about how it works.",
-            "revisit this after completing the project"
         ],
-        "images": [
-            { 
-                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
-                "alt" : "skate ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
-                "alt": "human ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
-                "alt":"skate ghost"
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Personal Ghosts",
-        "github": "https://github.com/sorayabenson/personal-ghosts-adventure-game",
-        "site": "https://sorayabenson.github.io/personal-ghosts-adventure-game/",
-        "tech": "HTML | CSS | JavaScript",
-        "tag": "When your are disconnected from your spirit, how does the body find its way home?",
-        "contributions": [
-            "A choose your own adventure game.",
-            "artwork",
-            "tech process"
-        ],
-        "images": [
-            { 
-                "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824464-HB880KO594YEXFIUKS6L/skater-ghost.png?format=300w",
-                "alt" : "skate ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688822448-Q6UXS9ZMD7KAY9ZZFNFM/human-ghost.png?format=300w",
-                "alt": "human ghost"
-            },
-            {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1613688824067-V9C422XZCJIFNKC3PKUG/plant-ghost.png?format=300w",
-                "alt":"skate ghost"
-            }
-        ]
+        "background": "#1d132b"
     }
 ]
