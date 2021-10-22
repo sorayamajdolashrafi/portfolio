@@ -8,7 +8,7 @@
         "tag": "Sing your hearts out even if you’re a thousand miles apart.",
         "description": [
             "A karaoke party app, where users can create and join party rooms, chat with each other, add songs to a shared queue, and sing their hearts out.",
-            "I worked along a remote team of five in a two week sprint to bring beatWavez to life. This fullstack React app utilizes Socket.IO and Material.UI to connect people through that karaoke dopamine rush despite the distance between them.",
+            "I worked with a remote team of five in a two week sprint to bring beatWavez to life. This fullstack React app utilizes Socket.IO and Material.UI to connect people through that karaoke dopamine.",
             "I led the mobile first design by building out the wireframes and implementing them through the power of the Material.UI library."
         ],
         "images": [
@@ -75,7 +75,7 @@
         "tech": "React | Express | PostgreSQL",
         "tag": "You've been dropped in a random location, can you figure out where you are?",
         "description": [
-            "In this geo guessing game that takes you around the world your character is dropped in the middle of nowhere. To find your way home you must guess each of the five locations based off of a streetview image and three clues.",
+            "In this geo guessing game that takes you around the world your character is dropped in the middle of nowhere. To find your way home use the streetview image and three clues to guess your location.",
             "In a one week sprint our remote team of four wove together multiple APIs to create the RESTful API that powers this full-stack React app.",
             "I created the wireframes, refined the color palette, and implemented the design. I also used my sharp eye for detail to debug and refactor the code."
         ],

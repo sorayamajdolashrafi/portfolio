@@ -3,9 +3,12 @@ import PropTypes from 'prop-types';
 import styles from '../../styles/projects.module.css';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const ProjectItem = ({ name, github, site, tech, tag, description, images, }) => {
     const [current, setCurrent] = useState(0);
+    const [expand, setExpand] = useState(false);
     const length = images.length;
     
     const  previousImage = () => {
@@ -16,55 +19,62 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images, }) =>
         setCurrent(current === length - 1 ? 0 : current + 1)
     }
 
+    const handleExpand = () => {
+        setExpand(!expand)
+        setCurrent(0)
+    }
+
     return (
         <li className={styles.project}>
-            <div className={styles.moon}>
-                <h2>{name}</h2>
-                <p className={styles.frontText}>{tag}</p>
-                <p className={styles.backText}>{tech}</p>
-            </div>
-
+            {
+                !expand &&
+                <div className={styles.moon}>
+                    <h2>{name}</h2>
+                    <p>{tag}</p>
+                </div>
+            }
             <section className={styles.beam}>
-                <div className={styles.front}>
-                    <img src={images[0].src} alt={images[0].alt} />
-                </div>
-
-                <div className={styles.back}>
-                    <div className={styles.arrowWrapper}>
-                        <button className={styles.arrows} onClick={previousImage}>
-                            <ArrowLeftIcon fontSize="large"/>
-                        </button>
-                        <button className={styles.arrows} onClick={nextImage}>
-                            <ArrowRightIcon  fontSize="large"/>
-                        </button>
-                    </div>
                     <div className={styles.carousel}>
-                        {
-                            current === 0 ?
-                            <section className={styles.description}>
-                                {description.map(text => (
-                                    <p>{text}</p>
-                                ))}
-                            </section>
-                            : <img src={images[current].src} alt={images[current].alt} />
-                        }
+                        <img src={images[current].src} alt={images[current].alt} />
                     </div>
-                </div>
-
-                <div className={styles.links}>
-                    <a 
-                        href={site} 
-                        target="_blank"
-                        aria-label="link to live site">
-                            live
-                    </a>
-                    <a 
-                        href={github} 
-                        target="_blank"
-                        aria-label="link to live site">
-                            code
-                    </a>
-                </div>
+                {
+                     expand &&
+                     <div className={styles.back}>
+                        <div className={styles.arrowWrapper}>
+                            <button className={styles.arrows} onClick={previousImage}>
+                                <ArrowLeftIcon fontSize="large"/>
+                            </button>
+                            <button className={styles.arrows} onClick={nextImage}>
+                                <ArrowRightIcon  fontSize="large"/>
+                            </button>
+                        </div>
+                        <p className={styles.tech}>{tech}</p>
+                        <div className={styles.description}>
+                            {description.map(text => (
+                                <p>{text}</p>
+                            ))}
+                        </div>
+                    </div>
+                }
+                    <div className={styles.links}>
+                        <a 
+                            href={site} 
+                            target="_blank"
+                            aria-label="link to live site">
+                                live
+                        </a>
+                        {
+                            expand
+                            ? <button onClick={handleExpand}><ExpandLessIcon /></button>
+                            : <button onClick={handleExpand}><ExpandMoreIcon /></button>
+                        }
+                        <a 
+                            href={github} 
+                            target="_blank"
+                            aria-label="link to live site">
+                                code
+                        </a>
+                    </div>
             </section>
         </li>
     )
