@@ -32,22 +32,21 @@
 } */
 
 .project {
-    width: 95%;
-    height: 30rem;
+    width: 84vw;
+    height: auto;
     list-style: none;
-    /* padding: 1.5rem; */
     margin: 1rem;
-    /* border: var(--poppy) 3px solid; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    transition: ease-out 0.3s;
 }
 
 .project h2 {
     padding: 0;
+    padding-top: 3rem;
     margin: 0;
-    margin-bottom: .5rem;
 }
 
 .project h3 {
@@ -57,18 +56,64 @@
     font-weight: 400;
 }
 
-/* .project:hover .back {
-    height: 100%;
+.moon {
+    width: 84vw;
+    height: 42vw;
+    border-radius:  42vw 42vw 0 0;
+    background: var(--moon);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beam {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* comment out to edit back */
+
+.frontText {
+    width: 70%;
+    text-align: center;
+}
+
+.backText {
+    display: none;
+}
+
+.project:hover .backText {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.project:hover .frontText {
+    display: none;
+}
+
+.project:hover .back {
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
+    transition:  0.5s ease-in-out;
 }
 
 .project:hover .front {
     display: none;
-} */
+}
+
+/* end comment */
 
 .front {
     height: 100%;
@@ -77,16 +122,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition:  0.5s ease-in-out;
 }
 
 .front img {
     width: 100%;
-    height: auto;
+    height:auto;
+}
+
+.front p {
+    text-align: center;
 }
 
 .back img {
     width: 100%;
     height: auto;
+    transition:  1s ease-in-out;
 }
 
 .back {
@@ -95,25 +146,41 @@
 
 /* switch to these when editing back design */
 /* .back {
-    height: 100%;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
+    transition:  0.5s ease-in-out;
 }
 
 .front {
     display: none;
+}
+
+.frontText {
+    display: none;
+}
+
+.backText {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 } */
+/* end back design edit: can delete when complete */
 
 .links {
-    width: 85%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background: var(--moon);
+    padding: .4rem;
 }
 
 .links a {
@@ -129,12 +196,21 @@
 
 .carousel {
     width: 100%;
-    height: 19rem;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    transition:  1s ease-in-out;
+}
+
+.arrowWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: var(--moon);
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .arrows {
@@ -149,12 +225,13 @@
 }
 
 .description {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: right;
+    transition:  0.5s ease-in-out;
 }
 
 /* tablet */

@@ -17,37 +17,40 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images, }) =>
     }
 
     return (
-        <li className={styles.project} key={name}>
-            <div className={styles.front}>
+        <li className={styles.project}>
+            <div className={styles.moon}>
                 <h2>{name}</h2>
-                <img src={images[0].src} alt={images[0].alt} />
-                <p>{tag}</p>
+                <p className={styles.frontText}>{tag}</p>
+                <p className={styles.backText}>{tech}</p>
             </div>
 
-            <div className={styles.back}>
-                <h2>{name}</h2>
-                <h3>{tech}</h3>
-                <div className={styles.carousel}>
-                    
-                    <button className={styles.arrows} onClick={previousImage}>
-                        <ArrowLeftIcon fontSize="large"/>
-                    </button>
-
-                    {
-                        current === 0 ?
-                        <section className={styles.description}>
-                            {description.map(text => (
-                                <p>{text}</p>
-                            ))}
-                        </section>
-                        : <img src={images[current].src} alt={images[current].alt} />
-                    }
-                    
-                    <button className={styles.arrows} onClick={nextImage}>
-                        <ArrowRightIcon  fontSize="large"/>
-                    </button>
-                    
+            <section className={styles.beam}>
+                <div className={styles.front}>
+                    <img src={images[0].src} alt={images[0].alt} />
                 </div>
+
+                <div className={styles.back}>
+                    <div className={styles.arrowWrapper}>
+                        <button className={styles.arrows} onClick={previousImage}>
+                            <ArrowLeftIcon fontSize="large"/>
+                        </button>
+                        <button className={styles.arrows} onClick={nextImage}>
+                            <ArrowRightIcon  fontSize="large"/>
+                        </button>
+                    </div>
+                    <div className={styles.carousel}>
+                        {
+                            current === 0 ?
+                            <section className={styles.description}>
+                                {description.map(text => (
+                                    <p>{text}</p>
+                                ))}
+                            </section>
+                            : <img src={images[current].src} alt={images[current].alt} />
+                        }
+                    </div>
+                </div>
+
                 <div className={styles.links}>
                     <a 
                         href={site} 
@@ -62,7 +65,7 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images, }) =>
                             code
                     </a>
                 </div>
-            </div>
+            </section>
         </li>
     )
 }

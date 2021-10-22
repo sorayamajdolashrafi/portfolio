@@ -6,9 +6,10 @@ import projects from './projects.json';
 const ProjectList = () => {
     return (
         <ul className={styles.projects}>
-            {projects.map((project) => {
-                return <ProjectItem {...project}/>
-            })}
+            {
+                projects.map((project) => (
+                    <ProjectItem  key={project.name} {...project}/>))
+            }
         </ul>
     )
 }
