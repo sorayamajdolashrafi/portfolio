@@ -5,15 +5,36 @@
         "github": "https://github.com/the-treblemakers/BeatWavez-FE",
         "site": "https://beatwavez.com/",
         "tech": "React | Material UI | Socket.IO | Express",
-        "tag": "A karaoke party app, where users can create and join party rooms, chat, and add songs to a shared queue.",
-        "contributions": [
-            "Remotely mob and pair programmed with a team of five in a two week sprint.",
-            "Wielded the power of the Material UI library to implement the mobile first design."
+        "tag": "Sing your hearts out even if you’re a thousand miles apart.",
+        "description": [
+            "A karaoke party app, where users can create and join party rooms, chat with each other, add songs to a shared queue, and sing their hearts out.",
+            "I worked along a remote team of five in a two week sprint to bring beatWavez to life. This fullstack React app utilizes Socket.IO and Material.UI to connect people through that karaoke dopamine rush despite the distance between them.",
+            "I led the mobile first design by building out the wireframes and implementing them through the power of the Material.UI library."
         ],
         "images": [
             { 
                 "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335802735-ZIM21LD2M83LHQ6LQNY1/beatwavez+logo.png?format=750w",
                 "alt" : "simple line art of two palms against a hot pink sunset, followed by the word beatWavez."
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878912012-YUMSF82PPAEKXJINCFOH/beatwavez+homepage+host.png?format=500w",
+                "alt": "home host"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878911471-FBIZL8N6EPFKDMQ58VVD/beatwavez+homepage+guest+password.png?format=500w",
+                "alt": "home guest"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878909831-4I80CVWQXH1KEKYDU9MK/beatwavez+greenrom+search.png?format=500w",
+                "alt": "greenroom search"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878910180-S6D6TGYZMAAGN5VI448S/beatwavez+greenroom+chat.png?format=500w",
+                "alt": "greenroom chat"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878912663-YY89I50Q44Y65NKM30HV/beatwavez+partyroom.png?format=500w",
+                "alt": "[artyroom with queue"
             }
         ],
         "background": "#10042a"
@@ -24,15 +45,24 @@
         "github": "https://github.com/st-ART-up/the-canvas",
         "site": "https://www.npmjs.com/package/@st-art-up/pixel-pusher",
         "tech": "Express | Blessed | Node.js",
-        "tag": "Pixel Pusher is an art app for the terminal, remotely mob and pair programmed in a two week sprint.",
-        "contributions": [
-            "Strategically organized the file structure to maintain navigable code.",
-            "Devised the base brush shape whose style and size is modified through multiple parameters to create other brushes."
+        "tag": "Bringing 90’s computer art to the command line.",
+        "description": [
+            "Pixel Pusher is the art app for the terminal that you never knew you needed. Users can create playful artwork in the canvas, upload masterpieces to the gallery, and browse other creators’ works.",
+            "Developed by a mega team of 8 in a remote two week sprint, where we worked primarily with the express framework and blessed library to bring a pop of color to those long days of coding.",
+            "I strategically organized the file structure to maintain navigable code. I also devised the base brush functionality so that both the size and style can be modified to create other brush types."
         ],
         "images": [
             { 
                 "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335829784-L32OMGTIJ30ZCJLCJPLW/pixel+pusher+logo.png?format=750w",
                 "alt" : "a terminal displays the rainbow pixel pusher logo."
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878981214-YOLH29YY34T5OHYBTVG7/pixle+pusher+rules.png?format=1000w",
+                "alt": "pixel pusher rules"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878980612-Y57T5JYHDOZRJHIRTZE4/pixel+pusher+duck.png?format=1000w",
+                "alt": "pixel pusher duck"
             }
         ],
         "background": "#fadfe6"
@@ -43,15 +73,28 @@
         "github": "https://github.com/where-in-the-search",
         "site": "https://else-by-elsewhere.netlify.app",
         "tech": "React | Express | PostgreSQL",
-        "tag": "Else By Elsewhere is a geo guessing game built in a remote one week sprint on a team of four.",
-        "contributions": [
-            "Wove together multiple APIs to create our own RESTful API for this full-stack React app.",
-            "Built the wireframes, implemented the design, and used my sharp eye for detail to catch bugs and refactor to create cleaner code."
+        "tag": "You've been dropped in a random location, can you figure out where you are?",
+        "description": [
+            "In this geo guessing game that takes you around the world your character is dropped in the middle of nowhere. To find your way home you must guess each of the five locations based off of a streetview image and three clues.",
+            "In a one week sprint our remote team of four wove together multiple APIs to create the RESTful API that powers this full-stack React app.",
+            "I created the wireframes, refined the color palette, and implemented the design. I also used my sharp eye for detail to debug and refactor the code."
         ],
         "images": [
             { 
                 "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335823727-DBSB9TVT9SANZFWGV7X7/else+by+elsewhere+logo.png?format=750w",
                 "alt" : "a classic stamp outline wraps around the words else by elsewhere"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878946791-EA7KZVGXE670D9P4U29N/else+by+elsewhere+home.png?format=1500w",
+                "alt": "else by elsewhere home"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878945531-9NMKKASITBGJ0G6IYUMX/else+by+elsewhere+game.png?format=1500w",
+                "alt": "else by elsewhere game"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878949011-WLT5OWO2LMDOQPZ76PJ2/else+by+elsewhere+travel+log.png?format=1500w",
+                "alt": "else by elsewhere results"
             }
         ],
         "background": "#fffaf7"
@@ -62,16 +105,32 @@
         "github": "https://github.com/UniKittyCorns/MemoryCardGame",
         "site": "https://vampirematch.netlify.app",
         "tech": "HTML | CSS | JavaScript",
-        "tag": "Vampire Match is a classic memory card matching game built with vanilla JavaScript.",
-        "contributions": [
-            "Remotely mob programed on a team of 4 in one week.",
-            "Designed the custom deck of cards.",
-            "Developed the CSS animation to flip the card over to reveal thefront, and integrated it with the JavaScript function to determine if the cards were a match."
+        "tag": "A classic memory card game with a slight lust for blood.",
+        "description": [
+            "Test your memory with three different difficulty levels. Flip over two cards at a time, hunting down those matches in the fewest moves possible to beat your high score.",
+            "This memory card game, inspired by the series ‘What We Do in the Shadows’, was built in plain javascript by a remote team of 4 in one week.",
+            "Alongside creating the custom artwork for the deck of cards, I also developed the CSS animation that flips the card over to reveal the front, and integrated it with the function that determines if the cards are a match."
         ],
         "images": [
             { 
                 "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335837812-ZROCLHPSL712ZTPP7C8A/vampire+match+logo.png?format=750w",
                 "alt" : "The words vampire match stretch over 4 match game cards."
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634879006287-CIRTADR9A51SVBLMIF2T/vampire+match+home.png?format=1500w",
+                "alt": "vampire match home"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634879005206-7D4KXK7H0TQBHUWXIGVL/vampire+match+game.png?format=1500w",
+                "alt": "vampire match game"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634879005644-PW1CYGUS74TZFFODHGMP/vampire+match+high+score.png?format=1500w",
+                "alt": "vampire match score board"
+            },
+            {
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634879004809-B9TFFGMMES9UGWVGW85H/vampire+match+full+deck.png?format=1500w",
+                "alt": "vampire match full deck"
             }
         ],
         "background": "#1d132b"

@@ -56,8 +56,8 @@
     font-size: 1rem;
     font-weight: 400;
 }
-/* 
-.project:hover .back {
+
+/* .project:hover .back {
     height: 100%;
     width: 100%;
     display: flex;
@@ -80,6 +80,11 @@
 }
 
 .front img {
+    width: 100%;
+    height: auto;
+}
+
+.back img {
     width: 100%;
     height: auto;
 }

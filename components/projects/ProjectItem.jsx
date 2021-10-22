@@ -4,7 +4,7 @@ import styles from '../../styles/projects.module.css';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-const ProjectItem = ({ name, github, site, tech, tag, contributions, images, }) => {
+const ProjectItem = ({ name, github, site, tech, tag, description, images, }) => {
     const [current, setCurrent] = useState(0);
     const length = images.length;
     
@@ -36,7 +36,7 @@ const ProjectItem = ({ name, github, site, tech, tag, contributions, images, }) 
                     {
                         current === 0 ?
                         <section className={styles.description}>
-                            {contributions.map(text => (
+                            {description.map(text => (
                                 <p>{text}</p>
                             ))}
                         </section>
