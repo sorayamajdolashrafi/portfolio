@@ -57,11 +57,11 @@
                 "alt" : "a terminal displays the rainbow pixel pusher logo."
             },
             {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878981214-YOLH29YY34T5OHYBTVG7/pixle+pusher+rules.png?format=1000w",
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947854259-8BR1KXRUSWTD4E6JIKVG/pixle+pusher+rules+terminal.png?format=750w",
                 "alt": "pixel pusher rules"
             },
             {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878980612-Y57T5JYHDOZRJHIRTZE4/pixel+pusher+duck.png?format=1000w",
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947853842-9TCBYIIU7R61OUN8OWS3/pixel+pusher+duck+terminal.png?format=750w",
                 "alt": "pixel pusher duck"
             }
         ],
@@ -85,15 +85,15 @@
                 "alt" : "a classic stamp outline wraps around the words else by elsewhere"
             },
             {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878946791-EA7KZVGXE670D9P4U29N/else+by+elsewhere+home.png?format=1500w",
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947842930-SQU5BOQV9BC5AX37XHG3/else+by+elsewhere+home+crop.png?format=750w",
                 "alt": "else by elsewhere home"
             },
             {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878945531-9NMKKASITBGJ0G6IYUMX/else+by+elsewhere+game.png?format=1500w",
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947842842-KOTY708SJ0DUSL8RITV8/else+by+elsewhere+game+crop.png?format=750w",
                 "alt": "else by elsewhere game"
             },
             {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634878949011-WLT5OWO2LMDOQPZ76PJ2/else+by+elsewhere+travel+log.png?format=1500w",
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947844003-VX8S3308K2BW5ZKHOW5Q/else+by+elsewhere+travel+log+crop.png?format=750w",
                 "alt": "else by elsewhere results"
             }
         ],
@@ -117,20 +117,20 @@
                 "alt" : "The words vampire match stretch over 4 match game cards."
             },
             {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634879006287-CIRTADR9A51SVBLMIF2T/vampire+match+home.png?format=1500w",
-                "alt": "vampire match home"
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634948804623-JR079WVQDFS9UZRMED6G/vampire+match+home.png?format=750w",
+                "alt": "vampire match homepage."
             },
             {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634879005206-7D4KXK7H0TQBHUWXIGVL/vampire+match+game.png?format=1500w",
-                "alt": "vampire match game"
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634948803321-GEYJ8SAS8GL0LJXCYTYP/vampire+match+game.png?format=750w",
+                "alt": "vampire match game of 24 cards with two cards face up. they are not a match."
             },
             {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634879005644-PW1CYGUS74TZFFODHGMP/vampire+match+high+score.png?format=1500w",
-                "alt": "vampire match score board"
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634948803946-U6HYDZZ2K9L9R8T72FP1/vampire+match+high+score.png?format=750w",
+                "alt": "vampire match high score board."
             },
             {
-                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634879004809-B9TFFGMMES9UGWVGW85H/vampire+match+full+deck.png?format=1500w",
-                "alt": "vampire match full deck"
+                "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634948803090-JU73SD0ZFXKM2P4C6HGO/vampire+match+full+deck.png?format=750w",
+                "alt": "vampire match full deck of 48 cards face up."
             }
         ],
         "background": "#1d132b"
