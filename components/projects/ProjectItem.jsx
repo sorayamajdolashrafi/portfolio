@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import styles from '../../styles/projects.module.css';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
@@ -30,16 +29,19 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images, }) =>
                 !expand &&
                 <div className={styles.moon}>
                     <h2>{name}</h2>
-                    <p>{tag}</p>
+                    
+                    <div className={styles.tagWrapper}>
+                        <p className={styles.tag}>{tag}</p>
+                        <p className={styles.tech}>{tech}</p>
+                    </div>
                 </div>
             }
             <section className={styles.beam}>
                     <div className={styles.carousel}>
                         <img src={images[current].src} alt={images[current].alt} />
                     </div>
-                {
-                     expand &&
-                     <div className={styles.back}>
+
+                     <div className={expand? styles.open : styles.closed}>
                         <div className={styles.arrowWrapper}>
                             <button className={styles.arrows} onClick={previousImage}>
                                 <ArrowLeftIcon fontSize="large"/>
@@ -48,14 +50,14 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images, }) =>
                                 <ArrowRightIcon  fontSize="large"/>
                             </button>
                         </div>
-                        <p className={styles.tech}>{tech}</p>
+                    <p className={styles.tech}>{tech}</p>
                         <div className={styles.description}>
                             {description.map(text => (
                                 <p>{text}</p>
                             ))}
                         </div>
                     </div>
-                }
+            
                     <div className={styles.links}>
                         <a 
                             href={site} 
