@@ -8,20 +8,24 @@ import Carousel from './Carousel.jsx';
 
 const ProjectItem = ({ name, github, site, tech, tag, description, images, }) => {
     const [current, setCurrent] = useState(0);
+    const [direction, setDirection] = useState(0)
     const [expand, setExpand] = useState(false);
     const length = images.length;
     
     const  previousImage = () => {
         setCurrent(current === 0 ? length - 1 : current - 1)
+        setDirection(-1)
     }
     
     const  nextImage = () => {
         setCurrent(current === length - 1 ? 0 : current + 1)
+        setDirection(1)
     }
 
     const handleExpand = () => {
         setExpand(!expand)
         setCurrent(0)
+        setDirection(0)
     }
 
     return (
@@ -42,7 +46,12 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images, }) =>
                         tag={tag} />
                 </motion.div>
 
-                <Carousel images={images} current={current}/>
+                <Carousel 
+                    images={images}
+                    current={current} 
+                    direction={direction}
+                    previousImage={previousImage}
+                    nextImage={nextImage} />
 
                 <motion.section
                     key="beam"

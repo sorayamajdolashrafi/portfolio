@@ -1,7 +1,6 @@
 import styles from '../../styles/projects.module.css';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const Beam = ({previousImage, nextImage, tech, description}) => {
   return (
