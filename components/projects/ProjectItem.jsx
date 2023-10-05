@@ -1,31 +1,33 @@
 import { useState } from 'react';
 import styles from '../../styles/projects.module.css';
 import { AnimatePresence, motion } from 'framer-motion';
+
 import Moon from './Moon.jsx';
 import Beam from './Beam.jsx';
 import Shadow from './Shadow.jsx';
 import Carousel from './Carousel.jsx';
 
-const ProjectItem = ({ name, github, site, tech, tag, description, images, }) => {
-    const [current, setCurrent] = useState(0);
-    const [direction, setDirection] = useState(0)
+const ProjectItem = ({ name, github, site, tech, tag, description, images }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
     const [expand, setExpand] = useState(false);
-    const length = images.length;
     
     const  previousImage = () => {
-        setCurrent(current === 0 ? length - 1 : current - 1)
-        setDirection(-1)
+        setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1)
     }
     
     const  nextImage = () => {
-        setCurrent(current === length - 1 ? 0 : current + 1)
-        setDirection(1)
+        setCurrentIndex(currentIndex === images.length - 1 ? 0 : currentIndex + 1)
     }
 
     const handleExpand = () => {
         setExpand(!expand)
-        setCurrent(0)
-        setDirection(0)
+        setCurrentIndex(0)
+    }
+
+    const handleImageChange = (index) => {
+        if(currentIndex !== index) {
+            setCurrentIndex(index)
+        } 
     }
 
     return (
@@ -43,15 +45,16 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images, }) =>
                     <Moon 
                         name={name} 
                         tech={tech} 
-                        tag={tag} />
+                        tag={tag} 
+                    />
                 </motion.div>
+
 
                 <Carousel 
                     images={images}
-                    current={current} 
-                    direction={direction}
-                    previousImage={previousImage}
-                    nextImage={nextImage} />
+                    currentIndex={currentIndex} 
+                    handleChange={handleImageChange} 
+                />
 
                 <motion.section
                     key="beam"
@@ -61,17 +64,16 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images, }) =>
                         { opacity: 1, height: 'auto' } 
                         : { opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}   
-                    >
+                >
                     <Beam 
-                        
                         images={images} 
-                        current={current} 
+                        current={currentIndex} 
                         previousImage={previousImage} 
                         nextImage={nextImage} 
                         tech={tech} 
                         description={description}
                         expand={expand}
-                        />
+                    />
                 </motion.section>
 
                 <Shadow 
@@ -79,7 +81,8 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images, }) =>
                     site={site}
                     handleExpand={handleExpand}
                     github={github}
-                    expand={expand}/>
+                    expand={expand}
+                />
 
             </AnimatePresence>
         </li>

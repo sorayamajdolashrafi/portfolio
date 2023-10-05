@@ -27,10 +27,6 @@
     background: var(--mint);
 }
 
-/* .projects::-webkit-scrollbar-thumb:hover {
-    border-bottom: var(--dusk) 3px solid;
-} */
-
 .project {
     width: 84vw;
     height: auto;
@@ -97,12 +93,8 @@
 }
 
 .carousel {
-    height: 100%;
-    height: auto;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .carousel img {
