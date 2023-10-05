@@ -21,7 +21,6 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
 
     const handleExpand = () => {
         setExpand(!expand)
-        setCurrentIndex(0)
     }
 
     const handleImageChange = (index) => {
