@@ -1,6 +1,6 @@
 import styles from '../../styles/projects.module.css';
-import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 const Beam = ({previousImage, nextImage, tech, description}) => {
   return (

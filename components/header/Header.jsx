@@ -17,15 +17,17 @@ const Header = () => {
             <Link href='/about'>
                 about
             </Link>
-            <Link href='/connect'>
-                connect
-            </Link>
-            <Link 
+            <a 
+                href="/SorayaBensonResume2021.pdf"    
+                target="_blank"
+                >
+                cv
+            </a>
+            {/* <Link 
                 href='/resume'
-                // href='/SorayaBensonResume2021.pdf'  target='_blank'
             >
                 cv
-            </Link>
+            </Link> */}
         </nav>
         </div>
     )
