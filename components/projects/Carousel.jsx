@@ -3,6 +3,37 @@ import { Carousel as ResponsiveCarousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Carousel = ({images, currentIndex, handleChange}) => {
+    // const renderIndicator = (
+    //     onClickHandler,
+    //     isSelected,
+    //     index,
+    //     label
+    // ) => {
+    //     if (isSelected) {
+    //         return (
+    //             <li
+    //                 className={`${styles.indicators} ${styles.selected}`}
+    //                 aria-label={`selected: ${label} ${index + 1}`}
+    //                 title={`selected: ${label} ${index + 1}`}
+    //             />
+    //         );
+    //     }
+    //     return (
+    //         <li
+    //             className={styles.indicators}
+    //             onClick={onClickHandler}
+    //             onKeyDown={onClickHandler}
+    //             value={index}
+    //             key={index}
+    //             role="button"
+    //             tabIndex={0}
+    //             title={`${label} ${index + 1}`}
+    //             aria-label={`${label} ${index + 1}`}
+    //         />
+    //     );
+    // };
+
+
   return (
     <div className={styles.carousel}>
         <ResponsiveCarousel
@@ -11,10 +42,11 @@ const Carousel = ({images, currentIndex, handleChange}) => {
             infiniteLoop={true}
             emulateTouch={true}
             dynamicHeight={true}
-            renderIndicator={false}
             showStatus={false}
+            showIndicators={false}
             selectedItem={currentIndex}
             onChange={handleChange}
+            // renderIndicator={(onClickHandler, isSelected, index, label) => renderIndicator(onClickHandler, isSelected, index, label)}
         >
             {
                 images.map((image) => (
