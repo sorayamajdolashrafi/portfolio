@@ -8,11 +8,11 @@ const Carousel = ({images, currentIndex, handleChange}) => {
         <ResponsiveCarousel
             showArrows={false}
             showThumbs={false}
+            showStatus={false}
+            showIndicators={false}
             infiniteLoop={true}
             emulateTouch={true}
             dynamicHeight={true}
-            renderIndicator={false}
-            showStatus={false}
             selectedItem={currentIndex}
             onChange={handleChange}
         >

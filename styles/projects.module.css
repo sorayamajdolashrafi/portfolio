@@ -123,6 +123,33 @@
     }
 }
 
+.indicatorWrapper {
+
+    bottom: 0;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.indicators {
+    transition: opacity .25s ease-in;
+    filter: alpha(opacity=30);
+    box-shadow: 1px 1px var(--dusk);
+    background: var(--moon);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.selected {
+    background: var(--poppy);
+}
+
 .arrowWrapper {
     width: 100%;
     height: auto;
