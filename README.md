@@ -11,5 +11,5 @@ salaam my bebe rats, welcome to my portfolio!
 ## notes
 - continue using react-responsive-carousel version 3.2.10 for a stable carousel. higher versions included bugs with:
   - seamless infinite scroll on click, which causes the swipe animation to look backwards.
-	- calling onChange unexpectedly, which causes the images to change on their own.
+  - calling onChange unexpectedly, which causes the images to change on their own.
 
