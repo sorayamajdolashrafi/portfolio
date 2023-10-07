@@ -12,11 +12,11 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
     const [expand, setExpand] = useState(false);
     
     const  previousImage = () => {
-        setCurrentIndex(currentIndex === -1 ? images.length - 2 : currentIndex - 1)
+        setCurrentIndex(currentIndex - 1)
     }
     
     const  nextImage = () => {
-        setCurrentIndex(currentIndex === images.length ? 0 : currentIndex + 1)
+        setCurrentIndex(currentIndex + 1)
     }
 
     const handleExpand = () => {
