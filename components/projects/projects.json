@@ -14,15 +14,18 @@
         "images": [
             { 
                 "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335802735-ZIM21LD2M83LHQ6LQNY1/beatwavez+logo.png?format=750w",
-                "alt" : "Simple line art of two palm trees against a hot pink sunset, followed by the word beatWavez. The image is against a dark purple background with a glowing yellow border."
+                "alt" : "Simple line art of two palm trees against a hot pink sunset, followed by the word beatWavez. The image is against a dark purple background with a glowing yellow border.",
+                "label": "beatWavez logo"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1696617231473-IM01Q0E29QVTTLATEH76/beatwavez+lobby+host+and+greenroom+chat+glow.png?format=1500w",
-                "alt": "An illustration of two white smart phones against a dark purple background with a glowing yellow border. The first phone has a screenshot of the home login page as a host. The second phone has a screenshot of the greenroom with a chat between two users. The chat reads: 'room: Welcome to the party in room Wavy Sunset!' 'jordan: salaam!' 'soraya: hey hey!'"
+                "alt": "An illustration of two white smart phones against a dark purple background with a glowing yellow border. The first phone has a screenshot of the home login page as a host. The second phone has a screenshot of the greenroom with a chat between two users. The chat reads: 'room: Welcome to the party in room Wavy Sunset!' 'jordan: salaam!' 'soraya: hey hey!'",
+                "label": "beatWavez lobby and chat"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1696618325455-FBQ4VE0IR4YK8SB8826K/beatwavez+greenroom+search+and+partyroom+karaoke+glow.png?format=1500w",
-                "alt": "An illustration of two white smart phones against a dark purple background with a glowing yellow border. The first phone has a screenshot of the the greenroom songbook search. 'Abba' is in the searchbar, three songs appear below. The second phone has a screenshot of the party room with a youtube video of the karaoke for 'Dancing Queen' by Abba, followed by the song queue."
+                "alt": "An illustration of two white smart phones against a dark purple background with a glowing yellow border. The first phone has a screenshot of the the greenroom songbook search. 'Abba' is in the searchbar, three songs appear below. The second phone has a screenshot of the party room with a youtube video of the karaoke for 'Dancing Queen' by Abba, followed by the song queue.",
+                "label": "beatWavez songbook and karaoke"
             }
         ],
         "background": "#10042a"
@@ -42,15 +45,18 @@
         "images": [
             { 
                 "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335829784-L32OMGTIJ30ZCJLCJPLW/pixel+pusher+logo.png?format=750w",
-                "alt" : "A computer terminal displays the rainbow pixel pusher logo against a black background."
+                "alt" : "A computer terminal displays the rainbow pixel pusher logo against a black background.",
+                "label": "Pixel Pusher logo"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947854259-8BR1KXRUSWTD4E6JIKVG/pixle+pusher+rules+terminal.png?format=750w",
-                "alt": "The terminal painting screen opens with tips that read 'Welcome to Pixel Pusher, where all your pixel dreamscome true... Some tips: The optimal terminal size is 150 by 50. Choose your favorite colors and click on the canvas with your mouse to draw. Brush sizes and erasers are on the left. To start over click the clear button. Add some fun text (a poem, perhaps?) on the canvas using the bottom yellow input bar. Mac Users: to save, first click the login button to use your github account then click the save button to take a screenshot. Next click the upload button to send your art to the gallery. Window Users: sad story... you can draw in Ubunut, but the upload is not ready for version 1.0, please screenshot your art with PrtScn key to save forever. To exit the program, hit escape. Have a rad time in the terminal like its 1995. Party on!! The start up team'."
+                "alt": "The terminal painting screen opens with tips that read 'Welcome to Pixel Pusher, where all your pixel dreamscome true... Some tips: The optimal terminal size is 150 by 50. Choose your favorite colors and click on the canvas with your mouse to draw. Brush sizes and erasers are on the left. To start over click the clear button. Add some fun text (a poem, perhaps?) on the canvas using the bottom yellow input bar. Mac Users: to save, first click the login button to use your github account then click the save button to take a screenshot. Next click the upload button to send your art to the gallery. Window Users: sad story... you can draw in Ubunut, but the upload is not ready for version 1.0, please screenshot your art with PrtScn key to save forever. To exit the program, hit escape. Have a rad time in the terminal like its 1995. Party on!! The start up team'.",
+                "label": "Pixel Pusher instruction page"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947853842-9TCBYIIU7R61OUN8OWS3/pixel+pusher+duck+terminal.png?format=750w",
-                "alt": "The terminal painting screen features a running purple pixelated duck with a mint beak and obscenely long mint legs. The terminal features a navigation bar at the top of the page with buttons for clear, save, upload, and login. Under that there is a color picker section and buttons to apply the color to the brush or canvas. The sidebar features three brush size options, small, medium and large, a 'random brush' option, and three eraser size options, small, medium and large. At the bottom of the screen there is a button 'how to add text' and an text input bar."
+                "alt": "The terminal painting screen features a running purple pixelated duck with a mint beak and obscenely long mint legs. The terminal features a navigation bar at the top of the page with buttons for clear, save, upload, and login. Under that there is a color picker section and buttons to apply the color to the brush or canvas. The sidebar features three brush size options, small, medium and large, a 'random brush' option, and three eraser size options, small, medium and large. At the bottom of the screen there is a button 'how to add text' and an text input bar.",
+                "label": "Pixel Pusher dani duck art"
             }
         ],
         "background": "#fadfe6"
@@ -70,19 +76,23 @@
         "images": [
             { 
                 "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335823727-DBSB9TVT9SANZFWGV7X7/else+by+elsewhere+logo.png?format=750w",
-                "alt" : "A classic stamp outline wraps around the words 'Else by Elsewhere'."
+                "alt" : "A classic stamp outline wraps around the words 'Else by Elsewhere'.",
+                "label": "Else by Elsewhere logo"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947842930-SQU5BOQV9BC5AX37XHG3/else+by+elsewhere+home+crop.png?format=750w",
-                "alt": "The home screen features intro text that reads 'Welcome to Else by Elsewhere, a game that will take you around the world. You've been dropped in a random location, cna you figure out where you are?' There is an input field to enter your name, followed by four characters to select from. The characters are an ex-librarian, a chard farmer, an aviator, or a smuggler. The chard farmer is selected, followed by a button 'journey forth!'"
+                "alt": "The home screen features intro text that reads 'Welcome to Else by Elsewhere, a game that will take you around the world. You've been dropped in a random location, cna you figure out where you are?' There is an input field to enter your name, followed by four characters to select from. The characters are an ex-librarian, a chard farmer, an aviator, or a smuggler. The chard farmer is selected, followed by a button 'journey forth!'",
+                "label": "Else by Elsewhere home screen"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947842842-KOTY708SJ0DUSL8RITV8/else+by+elsewhere+game+crop.png?format=750w",
-                "alt": "The gamepage features the classic stamp outline around an image. The image is of a tan brick courtyard and turqouise tiled repeating arches. To the left of the stamp there are controls for zooming in and out of the image, and pivoting the point of view. To the right of the stamp there are three sidequests that read: 'Figure out how much dailight there is', 'Ask a stranger what timezone you're in', and 'Find out the local currency so you can buy a snack'. Under the stamp there is a text field to guess the location, follow by a button to submit your guess."
+                "alt": "The gamepage features the classic stamp outline around an image. The image is of a tan brick courtyard and turqouise tiled repeating arches. To the left of the stamp there are controls for zooming in and out of the image, and pivoting the point of view. To the right of the stamp there are three sidequests that read: 'Figure out how much dailight there is', 'Ask a stranger what timezone you're in', and 'Find out the local currency so you can buy a snack'. Under the stamp there is a text field to guess the location, follow by a button to submit your guess.",
+                "label": "Else by Elsewhere clue screen"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634947844003-VX8S3308K2BW5ZKHOW5Q/else+by+elsewhere+travel+log+crop.png?format=750w",
-                "alt": "The results page features five stamp cards with images from Esfahan Iran, Nairobi City Kenya, Jawa Tengah Indoesia, Magallanes Chile, and Hadramawt Yemen."
+                "alt": "The results page features five stamp cards with images from Esfahan Iran, Nairobi City Kenya, Jawa Tengah Indoesia, Magallanes Chile, and Hadramawt Yemen.",
+                "label": "Else by Elsewhere results screen"
             }
         ],
         "background": "#fffaf7"
@@ -102,23 +112,28 @@
         "images": [
             { 
                 "src" : "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634335837812-ZROCLHPSL712ZTPP7C8A/vampire+match+logo.png?format=750w",
-                "alt" : "The words vampire match stretch over 4 match game cards with color block illustration. Two cards are face down and feature a purple coffin against a pink background. Two cards are face up with a mint background. One features a faceless man with thick black hair and round green glasses. The other card features plastic vampire fangs with purple and pink highlights."
+                "alt" : "The words vampire match stretch over 4 match game cards with color block illustration. Two cards are face down and feature a purple coffin against a pink background. Two cards are face up with a mint background. One features a faceless man with thick black hair and round green glasses. The other card features plastic vampire fangs with purple and pink highlights.",
+                "label": "Vampire Match logo"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634948804623-JR079WVQDFS9UZRMED6G/vampire+match+home.png?format=750w",
-                "alt": "The homepage features a row of face up cards offive characters, plastic vampire fangs, a pompous coat collar, a moon, and a crucifix. The are followed by 'It's matching time! Play your basic matching memory game, but vampire style!' There is an input field for your name, options to chose between three the difficulty levels, as well as a button to start to play."
+                "alt": "The homepage features a row of face up cards offive characters, plastic vampire fangs, a pompous coat collar, a moon, and a crucifix. The are followed by 'It's matching time! Play your basic matching memory game, but vampire style!' There is an input field for your name, options to chose between three the difficulty levels, as well as a button to start to play.",
+                "label": "Vampire Match home screen"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634948803321-GEYJ8SAS8GL0LJXCYTYP/vampire+match+game.png?format=750w",
-                "alt": "The game screen features a game of 24 cards with two cards face up. They are not a match. One features a faceless man with thick black hair and round green glasses. The other card features plastic vampire fangs with purple and pink highlights."
+                "alt": "The game screen features a game of 24 cards with two cards face up. They are not a match. One features a faceless man with thick black hair and round green glasses. The other card features plastic vampire fangs with purple and pink highlights.",
+                "label": "Vampire Match gameboard"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634948803946-U6HYDZZ2K9L9R8T72FP1/vampire+match+high+score.png?format=750w",
-                "alt": "The high score screen opens with the text 'Remember, high scores in this game are low numbers.' The high score board features the scores each level of difficulty easy, medium, and hard. The scores are recorded for five players: Soraya, Layla, Mahin, Charlie, and Rae. Under the score board there are three buttons, 'play again', 'change difficulty' and 'danger! clear all scores!'"
+                "alt": "The high score screen opens with the text 'Remember, high scores in this game are low numbers.' The high score board features the scores each level of difficulty easy, medium, and hard. The scores are recorded for five players: Soraya, Layla, Mahin, Charlie, and Rae. Under the score board there are three buttons, 'play again', 'change difficulty' and 'danger! clear all scores!'",
+                "label": "Vampire Match high score"
             },
             {
                 "src": "https://images.squarespace-cdn.com/content/v1/546be815e4b05d93ff91f0ed/1634948803090-JU73SD0ZFXKM2P4C6HGO/vampire+match+full+deck.png?format=750w",
-                "alt": "The full deck of 48 cards face up, with a mint background. There are candles, The Baron, a doll, a werewolf, a witch hat, a wooden stake, Lazlo, a topiary bush, Guillermo, Nandor, garlic, a crucifix, Collin Robinson, Nadia, a victorian house, a pompous coat collar, a bat, a moon, plastic vampire fangs, a floating cape, a knitted sweater, a skull, glasses, and a blood bag."
+                "alt": "The full deck of 48 cards face up, with a mint background. There are candles, The Baron, a doll, a werewolf, a witch hat, a wooden stake, Lazlo, a topiary bush, Guillermo, Nandor, garlic, a crucifix, Collin Robinson, Nadia, a victorian house, a pompous coat collar, a bat, a moon, plastic vampire fangs, a floating cape, a knitted sweater, a skull, glasses, and a blood bag.",
+                "label": "Vampire Match card deck"
             }
         ],
         "background": "#1d132b"

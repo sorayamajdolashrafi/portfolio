@@ -12,11 +12,15 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
     const [expand, setExpand] = useState(false);
     
     const  previousImage = () => {
-        setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1)
+        // allowing the index to be set > 0 is required for 
+        // the react-responsive-carousel seamless infinite scroll
+        setCurrentIndex(currentIndex -1);
     }
     
     const  nextImage = () => {
-        setCurrentIndex(currentIndex === images.length - 1 ? 0 : currentIndex + 1)
+        // allowing the index to be set > 0 is required for 
+        // the react-responsive-carousel seamless infinite scroll
+        setCurrentIndex(currentIndex + 1);
     }
 
     const handleExpand = () => {
@@ -35,7 +39,6 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
             <AnimatePresence initial={false}>
                 <motion.div
                     key="moon"
-                    // initial={true}
                     animate={ expand ? 
                         { opacity: 0, height: 0 } 
                         : { opacity: 1, height: 'auto' }}
@@ -58,7 +61,6 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
                 <motion.section
                     key="beam"
                     className={styles.open}
-                    // initial={false}
                     animate={ expand ? 
                         { opacity: 1, height: 'auto' } 
                         : { opacity: 0, height: 0 }}
@@ -66,12 +68,13 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
                 >
                     <Beam 
                         images={images} 
-                        current={currentIndex} 
+                        currentIndex={currentIndex} 
                         previousImage={previousImage} 
                         nextImage={nextImage} 
                         tech={tech} 
                         description={description}
                         expand={expand}
+                        handleChange={handleImageChange}
                     />
                 </motion.section>
 
