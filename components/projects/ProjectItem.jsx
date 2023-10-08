@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import styles from '../../styles/projects.module.css';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -8,19 +9,19 @@ import Shadow from './Shadow.jsx';
 import Carousel from './Carousel.jsx';
 
 const ProjectItem = ({ name, github, site, tech, tag, description, images }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [expand, setExpand] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0)
+    const [expand, setExpand] = useState(false)
     
     const  previousImage = () => {
         // allowing the index to be set > 0 is required for 
         // the react-responsive-carousel seamless infinite scroll
-        setCurrentIndex(currentIndex -1);
+        setCurrentIndex(currentIndex -1)
     }
     
     const  nextImage = () => {
         // allowing the index to be set > 0 is required for 
         // the react-responsive-carousel seamless infinite scroll
-        setCurrentIndex(currentIndex + 1);
+        setCurrentIndex(currentIndex + 1)
     }
 
     const handleExpand = () => {
@@ -92,7 +93,17 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
 }
 
 ProjectItem.propTypes = {
-
+    name: PropTypes.string.isRequired,
+    github: PropTypes.string.isRequired,
+    site: PropTypes.string.isRequired,
+    tech: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.shape({
+        src: PropTypes.string.isRequired,
+        alt: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired
+    }))
 }
 
-export default ProjectItem
+export default ProjectItem;
