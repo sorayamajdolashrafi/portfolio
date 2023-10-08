@@ -12,31 +12,137 @@
 .moon {
     width: 140vh;
     height: 70vh;
+    padding-bottom: 2rem;
     border-radius:  140vh 140vh 0 0;
     background: var(--moon);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.moon h2 {
+    margin: .1rem;
+}
+
+.ghost {
+    animation-delay: 2s;
+    animation: ghost ease 5s;
+    -webkit-animation: ghost ease 5s;
+    -moz-animation: ghost ease 5s;
+    -o-animation: ghost ease 5s;
+    -ms-animation: ghost ease 5s;
+}
+
+.shadow {
+    width: 1.5rem;
+    height: .5rem;
+    opacity: .4;
+    box-shadow: 0px 2px 1px var(--poppy);
+    border-radius: 50%;
+    background-color: var(--dusk);
+    animation-delay: 2s;
+    animation: shadow ease 5s;
+    -webkit-animation: shadow ease 5s;
+    -moz-animation: shadow ease 5s;
+    -o-animation: shadow ease 5s;
+    -ms-animation: shadow ease 5s;
+}
+
+@keyframes ghost {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes ghost {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-webkit-keyframes ghost {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-o-keyframes ghost {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes shadow {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:.4;
+    }
+}
+@-moz-keyframes shadow {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:.4;
+    }
+}
+@-webkit-keyframes shadow {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:.4;
+    }
+}
+@-o-keyframes shadow {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:.4;
+    }
+}
+@-ms-keyframes shadow {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:.4;
+    }
 }
 
 /* tablet */
 @media (min-width: 43em) {
     .moon {
-        background: var(--mint);
+        background: var(--moon);
+        border: 3px solid var(--mint);
     }
 }
 
 /* laptop */
 @media (min-width: 62em) {
     .moon {
-        background: var(--dusk);
+        background: var(--moon);
+        border: 3px solid var(--dusk);
     }
 }
 
 /* desktop */
 @media (min-width: 82em) {
     .moon {
-        background: var(--poppy);
+        background: var(--moon);
+        border: 3px solid var(--poppy);
     }
 }
