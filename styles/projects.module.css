@@ -6,6 +6,7 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -124,7 +125,6 @@
 }
 
 .indicatorWrapper {
-
     bottom: 0;
     margin: 10px 0;
     padding: 0;
@@ -191,12 +191,6 @@
     padding: .4rem;
 }
 
-.links a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: var(--dusk);
-}
-
 .links a:hover {
     color: var(--poppy);
     transition: 0.3s ease-in-out;
@@ -217,6 +211,7 @@
         width: 36vw;
         height: 18vw;
         border-radius:  18vw 18vw 0 0;
+        border: 3px solid var(--mint);
     }
 }
 
@@ -231,11 +226,24 @@
         width: 32vw;
     }
 
+    .project h2 {
+        font-size: 1.4rem;
+        padding-top: 3.75rem;
+    }
+
     .moon {
         width: 32vw;
         height: 16vw;
         border-radius:  16vw 16vw 0 0;
-        /* margin-top: 3.5rem; */
+        border: 3px solid var(--dusk);
+    }
+
+    /* .tagWrapper {
+        font-size: .8rem;
+    } */
+
+    .tag {
+        width: 90%;
     }
 }
 
@@ -254,5 +262,15 @@
         width: 26vw;
         height: 13vw;
         border-radius:  13vw 13vw 0 0;
+        border: 3px solid var(--poppy);
+    }
+
+    .project h2 {
+        font-size: 1.4rem;
+        padding-top: 4.6rem;
+    }
+
+    .tag {
+        width: 85%;
     }
 }

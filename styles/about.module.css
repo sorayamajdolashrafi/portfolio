@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    overflow: hidden; /*TODO delete line after scalability implemented*/
+    overflow: hidden; /*todo: delete line after scalability implemented*/
 }
 
 .moon {
@@ -22,7 +22,7 @@
 }
 
 .moon h2 {
-    font-size: 1.8rem;
+    margin-bottom: .75rem;
 }
 
 .moon ul {
@@ -36,12 +36,11 @@
 }
 
 .moon h3 {
-    font-size: 1.1rem;
     margin: 0;
 }
 
 .moon p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .bio {
@@ -49,32 +48,34 @@
     height: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-end;
+    padding-bottom: .5rem;
 }
 
 .p1 {
-    width: 55%;
-    text-align: right;
-    margin: 0;
-    margin-bottom: .8rem;
-}
-
-.p2 {
     width: 65%;
     text-align: right;
     margin: 0;
     margin-bottom: .8rem;
 }
 
-.p3 {
+.p2 {
     width: 75%;
     text-align: right;
     margin: 0;
     margin-bottom: .8rem;
 }
 
+.p3 {
+    width: 80%;
+    text-align: right;
+    margin: 0;
+    margin-bottom: .8rem;
+}
+
 .p4 {
-    width: 75%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -88,10 +89,8 @@
 }
 
 .p4 a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-left: 0.3rem;
-    text-decoration: none;
-    color: black;
 }
 
 .p4 a:hover {
@@ -110,7 +109,7 @@
     max-height: auto;
     max-width: 65%;
     border-radius: 1px;
-    box-shadow: black -8px 8px;
+    box-shadow: var(--dusk) -8px 8px 0.5px;
 }
 
 .tech {
@@ -131,17 +130,21 @@
 
 /* tablet */
 @media (min-width: 43em) {
-
-    
+    .moon {
+        border: 3px solid var(--mint);
+    }
 }
 
 /* laptop */
 @media (min-width: 62em) {
-
-    
+    .moon {
+        border: 3px solid var(--dusk);
+    }
 }
 
 /* desktop */
 @media (min-width: 82em) {
-
+    .moon {
+        border: 3px solid var(--poppy);
+    }
 }

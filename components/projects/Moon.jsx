@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import styles from '../../styles/projects.module.css';
 
-const Moon = ({name, tag, tech }) => {
+const Moon = ({ name, tag, tech }) => {
   return (
     <div className={styles.moon}>
         <h2>{name}</h2>
@@ -11,6 +12,12 @@ const Moon = ({name, tag, tech }) => {
         </div>
     </div>
   )
+}
+
+Moon.propTypes = {
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  tech: PropTypes.string.isRequired
 }
 
 export default Moon;

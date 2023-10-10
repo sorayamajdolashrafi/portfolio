@@ -1,8 +1,9 @@
-import styles from '../../styles/projects.module.css'
+import PropTypes from 'prop-types';
+import styles from '../../styles/projects.module.css';
 import { Carousel as ResponsiveCarousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Carousel = ({images, currentIndex, handleChange}) => {
+const Carousel = ({ images, currentIndex, handleChange }) => {
   return (
     <div className={styles.carousel}>
         <ResponsiveCarousel
@@ -30,4 +31,14 @@ const Carousel = ({images, currentIndex, handleChange}) => {
   )
 }
 
-export default Carousel;  
+Carousel.propTypes = {
+    images: PropTypes.PropTypes.arrayOf(PropTypes.shape({
+        src: PropTypes.string.isRequired,
+        alt: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired
+    })),
+    currentIndex: PropTypes.number.isRequired,
+    handleChange: PropTypes.func.isRequired
+}
+
+export default Carousel;

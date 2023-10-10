@@ -4,9 +4,11 @@ import styles from '../../styles/Header.module.css';
 const Header = () => {
     return (
         <div className={styles.header}>
-        <header>
-            <h1>SORAYA BENSON</h1>
-        </header>
+            <header>
+                <Link href='/'>
+                    <h1>SORAYA BENSON</h1>
+                </Link>
+            </header>
         <nav>
             <Link href='/'>
                 home
@@ -23,11 +25,6 @@ const Header = () => {
                 >
                 cv
             </a>
-            {/* <Link 
-                href='/resume'
-            >
-                cv
-            </Link> */}
         </nav>
         </div>
     )

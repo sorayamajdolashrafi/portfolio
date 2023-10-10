@@ -1,18 +1,17 @@
-import PropTypes from 'prop-types';
 import styles from '../../styles/about.module.css';
 
-const Bio = props => {
+const Bio = () => {
     return (
         <section className={styles.bio}>
             <h2>oh, hello!</h2>
             <p className={styles.p1}>
-                I'm a full-stack software engineer with a background as a visual artist, crafting worlds is my jam.
+                I'm a frontend software engineer currently enjoying my role at New Relic on the Logging team.
             </p>
             <p className={styles.p2}>
-                I adore interactive storytelling and love weaving together different skills to bring those stories to life. Getting to do that with a rad team is even better.
+                My background as a visual artist has shaped my love for creative problem solving and getting lost in research.
             </p>
             <p className={styles.p3}>
-                Right now I'm really into learning about how to make the internet accesible. Off the internet I'm learning how to actually weave tiny carpets.
+                Right now I'm really into learning about how to make the internet accesible. Off the internet I'm learning how to weave tiny carpets.
             </p>
 
             <div className={styles.p4}>
@@ -23,10 +22,6 @@ const Bio = props => {
             </div>
         </section>
     )
-}
-
-Bio.propTypes = {
-
 }
 
 export default Bio;

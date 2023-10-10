@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from '../../styles/projects.module.css';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
@@ -17,7 +18,7 @@ const Beam = ({previousImage, nextImage, tech, description, handleChange, curren
                   aria-label={`selected: ${label}`}
                   title={`selected: ${label}`}
               />
-          );
+          )
       }
       return (
           <li
@@ -31,10 +32,10 @@ const Beam = ({previousImage, nextImage, tech, description, handleChange, curren
               title={`${label}`}
               aria-label={`${label}`}
           />
-      );
-  };
+      )
+  }
 
-  const renderIndicators = ({images, handleChange, currentIndex}) => (
+  const renderIndicators = ({ images, handleChange, currentIndex }) => (
     <ul className={styles.indicatorWrapper}>
       {
         images.map((image, index) => {
@@ -44,7 +45,6 @@ const Beam = ({previousImage, nextImage, tech, description, handleChange, curren
       }
     </ul>
   )
-
 
   return (
     <section className={styles.beam}>
@@ -71,6 +71,16 @@ const Beam = ({previousImage, nextImage, tech, description, handleChange, curren
             
     </section>
   )
+}
+
+Beam.propTypes = {
+  images: PropTypes.PropTypes.arrayOf(PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired
+  })),
+  currentIndex: PropTypes.number.isRequired,
+  handleChange: PropTypes.func.isRequired
 }
 
 export default Beam;
