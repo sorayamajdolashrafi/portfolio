@@ -3,7 +3,7 @@ import styles from '../../styles/about.module.css';
 const Tech = () => {
     return (
         <section className={styles.tech}>
-            <h2>tech:</h2>
+            <h2>tech</h2>
             <ul>
                 <li>
                     <h3>languages</h3>

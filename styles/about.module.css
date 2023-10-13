@@ -1,4 +1,4 @@
-/* phone */
+/* phone s */
 .moonCradle {
     width: 100%;
     height: 100%;
@@ -6,23 +6,31 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    overflow: hidden; /*todo: delete line after scalability implemented*/
+    overflow: hidden;
 }
 
 .moon {
     width: 140vh;
     height: 70vh;
-    border-radius:  140vh 140vh 0 0;
+    border-radius: 140vh 140vh 0 0;
     background: var(--moon);
-    display: grid;
-    grid-template-columns: 3fr 1fr 3fr;
-    gap: .5rem;
-    justify-content: center;
-    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.craterWrapper {
+    width: 100vw;
+    overflow: scroll;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .moon h2 {
     margin-bottom: .75rem;
+    text-align: center;
 }
 
 .moon ul {
@@ -31,120 +39,251 @@
     margin: 0;
 } 
 
-.moon li {
-    margin-bottom: .5rem;
-}
-
 .moon h3 {
     margin: 0;
 }
 
 .moon p {
-    font-size: 1rem;
+    margin: 0;
+    padding-top: 1rem;
 }
 
 .bio {
     width: 100%;
-    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-bottom: .5rem;
 }
 
-.p1 {
-    width: 65%;
-    text-align: right;
-    margin: 0;
-    margin-bottom: .8rem;
-}
-
-.p2 {
-    width: 75%;
-    text-align: right;
-    margin: 0;
-    margin-bottom: .8rem;
-}
-
-.p3 {
-    width: 80%;
-    text-align: right;
-    margin: 0;
-    margin-bottom: .8rem;
-}
-
-.p4 {
-    width: 85%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: right;
-    margin-bottom: .8rem;
-}
-
-.p4 p {
-    margin: 0;
+.bio h2 {
+    margin-bottom: .25rem;
 }
 
 .p4 a {
-    font-size: 1rem;
-    margin-left: 0.3rem;
+    margin: 0;
 }
 
 .p4 a:hover {
     text-decoration: var(--poppy) underline;
 }
 
-.portrait {
-    width: 100%;
-    height: 95%;
+.miniPortrait {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
 }
 
-.portrait img {
-    max-height: auto;
-    max-width: 65%;
+.miniPortrait img {
     border-radius: 1px;
     box-shadow: var(--dusk) -8px 8px 0.5px;
 }
 
+.portrait {
+    display: none;
+}
+
 .tech {
     width: 100%;
-    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-bottom: .5rem;
+    padding-bottom: 2rem;
+}
+
+.tech li {
+    margin-top: .5rem;
 }
 
 .tech p {
-    width: 90%;
-    text-align: left;
-    margin: 0;
+    padding: 0;  
 }
 
-/* tablet */
-@media (min-width: 43em) {
+/* phone xs */
+@media (max-width: 22.3em) {
     .moon {
-        border: 3px solid var(--mint);
+        width: 120vh;
+        height: 70vh;
+        border-radius: 120vh 120vh 0 0;
+        overflow: scroll;
+    }
+
+    .moon p {
+        padding-top: .7rem;
+    }
+}
+
+/* phone m */
+@media (min-width: 29.7em) {
+    .craterWrapper {
+        padding-top: .5rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+
+/* tablet s */
+@media (min-width: 43em) {
+    .moon ul {
+        overflow: scroll;
+    }
+
+    .craterWrapper {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .miniPortrait {
+        display: none;
+    }
+
+    .portrait {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .portrait img {
+        max-height: 100%;
+        border-radius: 1px;
+        box-shadow: var(--dusk) -8px 8px 0.5px;
+    }
+
+    .bio {
+        width: 100%;
+        max-height: 100%;
+        padding-bottom: 0rem;
+    }
+
+    .bio li {
+        display: flex;
+        justify-content: right;
+        margin: 0;
+    }
+
+    .bio h2 {
+        text-align: right;
+    }
+
+    .bio p {
+        text-align: right;
+    }
+
+    .tech {
+        padding-bottom: 0;
+        max-height: 100%;
+    }
+
+    .tech h2 {
+        text-align: left;
+    }
+}
+
+/* tablet m */
+@media (min-width: 51em) {
+    .moon {
+        width: 136vh;
+        height: 68vh;
+        border-radius: 136vh 136vh 0 0;
+    }
+
+    .bio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .p1 {
+        width: 65%;
+    }
+    
+    .p2 {
+        width: 72%;
+    }
+    
+    .p3 {
+        width: 77%;
+    }
+    
+    .p4 {
+        width: 95%;
+    }
+
+    .tech p {
+        width: 80%;
     }
 }
 
 /* laptop */
-@media (min-width: 62em) {
+@media (min-width: 62em) {   
     .moon {
-        border: 3px solid var(--dusk);
+        width: 132vh;
+        height: 66vh;
+        border-radius: 132vh 132vh 0 0;
+    }
+
+    .p1 {
+        width: 65%;
+    }
+    
+    .p2 {
+        width: 72%;
+    }
+    
+    .p3 {
+        width: 77%;
+    }
+    
+    .p4 {
+        width: 95%;
+    }
+    
+    .tech {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        overflow: scroll;
+    }
+
+    .tech li {
+        margin-top: .3rem;
+    }
+    
+    .tech p {
+        width: 80%;
     }
 }
 
-/* desktop */
-@media (min-width: 82em) {
+/* desktop l */
+@media (min-width: 104em) {
     .moon {
-        border: 3px solid var(--poppy);
+        width: 140vh;
+        height: 70vh;
+        border-radius: 140vh 140vh 0 0;
+    }
+
+    .p1 {
+        width: 55%;
+    }
+    
+    .p2 {
+        width: 65%;
+    }
+    
+    .p3 {
+        width: 70%;
+    }
+    
+    .p4 {
+        width: 95%;
     }
 }
