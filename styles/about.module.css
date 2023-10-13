@@ -223,6 +223,12 @@
 
 /* laptop */
 @media (min-width: 62em) {   
+    .moon {
+        width: 132vh;
+        height: 66vh;
+        border-radius: 132vh 132vh 0 0;
+    }
+
     .p1 {
         width: 65%;
     }
@@ -259,6 +265,12 @@
 
 /* desktop l */
 @media (min-width: 104em) {
+    .moon {
+        width: 140vh;
+        height: 70vh;
+        border-radius: 140vh 140vh 0 0;
+    }
+
     .p1 {
         width: 55%;
     }
