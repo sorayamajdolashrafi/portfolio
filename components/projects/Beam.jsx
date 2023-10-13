@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
-import styles from '../../styles/projects.module.css';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
-const Beam = ({previousImage, nextImage, tech, description, handleChange, currentIndex, images}) => {
+import styles from '../../styles/projects.module.css';
+
+const Beam = ({images, currentIndex,  previousImage, nextImage, name, tech, description, expand, handleChange }) => {
   const renderIndicator = ({
     handleChange,
     isSelected,
@@ -48,7 +49,6 @@ const Beam = ({previousImage, nextImage, tech, description, handleChange, curren
 
   return (
     <section className={styles.beam}>
-
       <div className={styles.arrowWrapper}>
           <button className={styles.arrows} onClick={previousImage}>
               <ArrowLeftIcon fontSize="large"/>
@@ -60,7 +60,7 @@ const Beam = ({previousImage, nextImage, tech, description, handleChange, curren
               <ArrowRightIcon  fontSize="large"/>
           </button>
       </div>
-      
+  
       <p className={styles.tech}>{tech}</p>
 
       <div className={styles.description}>
@@ -68,7 +68,6 @@ const Beam = ({previousImage, nextImage, tech, description, handleChange, curren
               <p key={i}>{text}</p>
           ))}
       </div>
-            
     </section>
   )
 }
@@ -80,6 +79,13 @@ Beam.propTypes = {
     label: PropTypes.string.isRequired
   })),
   currentIndex: PropTypes.number.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  previousImage: PropTypes.func.isRequired,
+  nextImage: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  tech: PropTypes.string.isRequired,
+  description: PropTypes.arrayOf(PropTypes.string).isRequired,
+  expand: PropTypes.bool.isRequired,
   handleChange: PropTypes.func.isRequired
 }
 

@@ -1,9 +1,11 @@
-/* phone */
+/* phone s */
 .projects {
     width: 95%;
-    height: 100%;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
+    padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -15,7 +17,6 @@
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 3px;
-    /* disable width scroll when site is scalable  */
 }
 
 .projects::-webkit-scrollbar-track {
@@ -37,34 +38,34 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    transition: height 1s;
 }
 
 .project h2 {
-    padding: 0;
-    padding-top: 3rem;
+    padding: 0 1rem calc(.2rem + .5vw) 1rem;
     margin: 0;
-}
-
-.project h3 {
-    padding: 0;
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 400;
+    max-width: 80%;
+    text-align: center;
 }
 
 .moon {
     width: 84vw;
     height: 42vw;
+    padding: .5rem;
+    padding-top: 1rem;
     border-radius:  42vw 42vw 0 0;
     background: var(--moon);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    z-index: 1;
+    position: relative;
 }
 
 .moon p {
-    margin: 0 0 .5rem 0;
+    margin: 0;
+    margin-top: .5rem;
     padding: 0;
     text-align: center;
 }
@@ -77,7 +78,7 @@
 }
 
 .tag {
-    width: 70%;
+    width: 75%;
 }
 
 .tech {
@@ -105,23 +106,12 @@
 }
 
 .open {
-    max-height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    opacity: 1;
-}
-
-@keyframes grow {
-    0% {
-        transform: scaleY(0);
-    }
-    100% {
-        transform: scaleY(1);
-    }
 }
 
 .indicatorWrapper {
@@ -176,7 +166,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: right;
-    transition:  0.5s ease-in-out;
 }
 
 .links {
@@ -187,7 +176,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background: var(--moon); */
     padding: .4rem;
 }
 
@@ -196,13 +184,50 @@
     transition: 0.3s ease-in-out;
 }
 
-/* tablet */
-@media (min-width: 43em) {
-    .projects {
-        width: 80%;
-        height: 100%;
+/* phone fold */
+@media(max-width: 17.5em) {
+    .moon {
+        padding: .2rem;
     }
-    
+
+    .project h2 {
+        padding-bottom: .05rem;
+    }
+
+    .moon p {
+        margin-top: 0;
+        margin-bottom: .05rem;
+    }
+}
+
+/* phone xs */
+@media (max-width: 22.3em) {
+    .project h2 {
+        padding-bottom: .2rem;
+    }
+
+    .moon p {
+        margin-bottom: .2rem;
+    }
+
+    .tag {
+        width: 80%;
+    }
+}
+
+/* phone m */
+@media (min-width: 29.7em) {
+    .tag {
+        width: 85%;
+    }
+
+    .project h2 {
+        padding-bottom: .2rem;
+    }
+}
+
+/* tablet s */
+@media (min-width: 43em) {    
     .project {
         width: 36vw;
     }
@@ -211,65 +236,85 @@
         width: 36vw;
         height: 18vw;
         border-radius:  18vw 18vw 0 0;
-        border: 3px solid var(--mint);
+    }
+
+    .moon p {
+        margin-top: .2rem;
+    }
+
+    .project h2 {
+        padding-bottom: 0;
+    }
+}
+
+/* tablet m */
+@media (min-width: 51em) {
+    .moon p {
+        margin-top: .5rem;
+    }
+
+    .project h2 {
+        padding-bottom: .5rem;
     }
 }
 
 /* laptop */
-@media (min-width: 62em) {
+@media (min-width: 62em) {  
     .projects {
-        width: 70%;
-        height: 100%;
+        width: 80%;
     }
-
-    .project {
-        width: 32vw;
-    }
-
-    .project h2 {
-        font-size: 1.4rem;
-        padding-top: 3.75rem;
-    }
-
-    .moon {
-        width: 32vw;
-        height: 16vw;
-        border-radius:  16vw 16vw 0 0;
-        border: 3px solid var(--dusk);
-    }
-
-    /* .tagWrapper {
-        font-size: .8rem;
-    } */
 
     .tag {
         width: 90%;
     }
+
+    .project h2 {
+        padding-bottom: .7rem;
+    }
 }
 
-/* desktop */
+/* desktop s */
+@media (min-width: 69em) {
+    .project h2 {
+        padding-bottom: .8rem;
+    }
+
+    .moon p {
+        margin-top: .8rem;
+    }
+}
+
+/* desktop m */
 @media (min-width: 82em) {
     .projects {
         width: 60%;
-        height: 100%;
     }
 
     .project {
         width: 26vw;
+    }
+
+    .project h2 {
+        padding-bottom: .5rem;
     }
 
     .moon {
         width: 26vw;
         height: 13vw;
         border-radius:  13vw 13vw 0 0;
-        border: 3px solid var(--poppy);
     }
 
-    .project h2 {
-        font-size: 1.4rem;
-        padding-top: 4.6rem;
+    .moon p {
+        margin-top: .4rem;
     }
 
+    .tag {
+        width: 85%;
+    }
+}
+
+/* desktop l */
+@media (min-width: 104em) {
     .tag {
         width: 85%;
     }

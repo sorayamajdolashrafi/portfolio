@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,8 +8,9 @@
 
 :root {
   --cream: #fffffb;
-  --moon: #FFD401;
+  --moon: #FFCC00;
   --poppy: #FF5B3E;
+  --tulip: #FF3D71;
   --mint: #1BCF91;
   --dusk: #0A2728;
 }
@@ -17,17 +20,51 @@ html, body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: calc(15px + 0.390625vw);
+  color: var(--dusk);
   position: relative;
   background: var(--cream);
 }
 
+/* phone s */
+h1 {
+  font-weight: 400;
+  font-size: calc(1.7rem + 1vw);
+  font-family: 'Rubik Mono One', sans-serif;
+  letter-spacing: -0.05rem;
+  word-spacing: -.5rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: calc(1.1rem + 1vw);
+  font-family: 'Rubik Mono One', sans-serif;
+  letter-spacing: -0.05rem;
+  word-spacing: -.5rem;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: calc(1rem + 1vw);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+p {
+  font-size: calc(.7rem + 1vw);
+}
+
 button {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   border: none;
   background: transparent;
   cursor: pointer;
+}
+
+a {
+  color: var(--dusk);
+  text-decoration: none;
+  font-size: calc(.7rem + 1vw);
 }
 
 .page {
@@ -35,10 +72,78 @@ button {
   height: 100%;
   transform: translate3d(0, 0, 0);
   position: absolute;
-  padding-top: 9rem;
+  padding-top: 8.5rem;
   padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* phone xs */
+@media (max-width: 22.3em) {
+  h1 {
+    font-size: calc(1.3rem + 1vw);
+  }
+  
+  h2 {
+    font-size: calc(.9rem + 1vw);
+  }
+  
+  h3 {
+    font-size: calc(.8rem + 1vw);
+  }
+  
+  p {
+    font-size: calc(.5rem + 1vw);
+  }
+
+  a {
+    font-size: calc(.5rem + 1vw);
+  }
+}
+
+/* phone m */
+/* @media (min-width: 29.7em) {} */
+
+/* tablet s */
+@media (min-width: 43em) {
+  h1 {
+    font-size: calc(1.7rem + 0vw);
+  }
+  
+  h2 {
+    font-size: calc(1.1rem + 0vw);
+  }
+  
+  h3 {
+    font-size: calc(1rem + 0vw);
+  }
+  
+  p {
+    font-size: calc(.7rem + 0vw);
+  }
+
+  a {
+    font-size: calc(.7rem + 0vw);
+  }
+}
+
+/* tablet m */
+/* @media (min-width: 51em) {} */
+
+/* laptop */
+/* @media (min-width: 62em) {} */
+
+/* desktop s */
+/* @media (min-width: 69em) {} */
+
+/* desktop m */
+/* @media (min-width: 82em) {} */
+
+/* desktop l */
+@media (min-width: 104em) {
+  .page {
+    background: cyan;
+  }
 }

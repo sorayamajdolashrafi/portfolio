@@ -1,12 +1,14 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
-import styles from '../../styles/projects.module.css';
+import PropTypes from 'prop-types';
 import { AnimatePresence, motion } from 'framer-motion';
 
+import styles from '../../styles/projects.module.css';
 import Moon from './Moon.jsx';
 import Beam from './Beam.jsx';
 import Shadow from './Shadow.jsx';
 import Carousel from './Carousel.jsx';
+
+const ANIMATION_SPEED = .3;
 
 const ProjectItem = ({ name, github, site, tech, tag, description, images }) => {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -35,22 +37,29 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
     }
 
     return (
-        <li className={styles.project}>
+        <motion.li className={styles.project} layout>
 
-            <AnimatePresence initial={false}>
+            <AnimatePresence 
+                key={`project ${name}`}
+                initial={false}
+            >
                 <motion.div
                     key="moon"
-                    animate={ expand ? 
+                    animate={ 
+                        expand ? 
                         { opacity: 0, height: 0 } 
-                        : { opacity: 1, height: 'auto' }}
-                    transition={{ duration: 0.3 }}
+                        : { opacity: 1, height: 'auto' }
+                    }
+                    transition={{ duration: ANIMATION_SPEED }}
                 >
                     <Moon 
                         name={name} 
                         tech={tech} 
                         tag={tag} 
-                    />
+                        expand={expand}
+                    />  
                 </motion.div>
+            </AnimatePresence>
 
 
                 <Carousel 
@@ -59,25 +68,32 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
                     handleChange={handleImageChange} 
                 />
 
+            <AnimatePresence       
+                key={`${name} detail`}
+                initial={false}
+            > {
+                expand &&
                 <motion.section
-                    key="beam"
-                    className={styles.open}
-                    animate={ expand ? 
-                        { opacity: 1, height: 'auto' } 
-                        : { opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3 }}   
+                key={`${name} detail`}
+                className={styles.open}
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: ANIMATION_SPEED }}   
                 >
                     <Beam 
                         images={images} 
                         currentIndex={currentIndex} 
                         previousImage={previousImage} 
                         nextImage={nextImage} 
+                        name={name}
                         tech={tech} 
                         description={description}
                         expand={expand}
                         handleChange={handleImageChange}
-                    />
+                        />
                 </motion.section>
+            } </AnimatePresence>
 
                 <Shadow 
                     key="shadow"
@@ -86,9 +102,8 @@ const ProjectItem = ({ name, github, site, tech, tag, description, images }) => 
                     github={github}
                     expand={expand}
                 />
-
-            </AnimatePresence>
-        </li>
+    
+        </motion.li>
     )
 }
 
@@ -98,7 +113,7 @@ ProjectItem.propTypes = {
     site: PropTypes.string.isRequired,
     tech: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.arrayOf(PropTypes.string).isRequired,
     images: PropTypes.arrayOf(PropTypes.shape({
         src: PropTypes.string.isRequired,
         alt: PropTypes.string.isRequired,

@@ -4,7 +4,7 @@
         "name": "beatWavez",
         "github": "https://github.com/the-treblemakers/BeatWavez-FE",
         "site": "https://beatwavez.com/",
-        "tech": "React | Material UI | Socket.IO | Express",
+        "tech": "React | Material UI | Socket.IO",
         "tag": "Sing your hearts out even if you’re a thousand miles apart.",
         "description": [
             "A karaoke party app, where users can create and join party rooms, chat with each other, add songs to a shared queue, and sing their hearts out.",
@@ -67,7 +67,7 @@
         "github": "https://github.com/where-in-the-search",
         "site": "https://else-by-elsewhere.netlify.app",
         "tech": "React | Express | PostgreSQL",
-        "tag": "You've been dropped in a random location,\ncan you figure out where you are?",
+        "tag": "Can you find your way home?",
         "description": [
             "In this geo guessing game that takes you around the world your character is dropped in the middle of nowhere. To find your way home use the streetview image and three clues to guess your location.",
             "In a one week sprint our remote team of four wove together multiple APIs to create the RESTful API that powers this full-stack React app.",
