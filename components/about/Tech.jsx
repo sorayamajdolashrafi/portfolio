@@ -19,7 +19,7 @@ const Tech = () => {
                 </li>
                 <li>
                     <h3>databases</h3>
-                    <p>PostgreSQL</p>
+                    <p>PostgreSQL, GraphQL</p>
                 </li>
                 <li>
                     <h3>skills</h3>

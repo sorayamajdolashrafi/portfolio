@@ -142,8 +142,4 @@ a {
 /* @media (min-width: 82em) {} */
 
 /* desktop l */
-@media (min-width: 104em) {
-  .page {
-    background: cyan;
-  }
-}
+/* @media (min-width: 104em) {} */

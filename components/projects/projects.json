@@ -5,7 +5,7 @@
         "github": "https://github.com/the-treblemakers/BeatWavez-FE",
         "site": "https://beatwavez.com/",
         "tech": "React | Material UI | Socket.IO",
-        "tag": "Sing your hearts out even if you’re a thousand miles apart.",
+        "tag": "Sing your hearts out even if you’re a thousand miles apart",
         "description": [
             "A karaoke party app, where users can create and join party rooms, chat with each other, add songs to a shared queue, and sing their hearts out.",
             "I worked with a remote team of five in a two week sprint to bring beatWavez to life. This fullstack React app utilizes Socket.IO and Material.UI to connect people through that karaoke dopamine.",
@@ -36,7 +36,7 @@
         "github": "https://github.com/st-ART-up/the-canvas",
         "site": "https://www.npmjs.com/package/@st-art-up/pixel-pusher",
         "tech": "Express | Blessed | Node.js",
-        "tag": "Bringing 90’s computer art to the command line.",
+        "tag": "Bringing 90’s computer art to the command line",
         "description": [
             "Pixel Pusher is the art app for the terminal that you never knew you needed. Users can create playful artwork in the canvas, upload masterpieces to the gallery, and browse other creators’ works.",
             "Developed by a mega team of 8 in a remote two week sprint, where we worked primarily with the express framework and blessed library to bring a pop of color to those long days of coding.",
@@ -103,9 +103,9 @@
         "github": "https://github.com/UniKittyCorns/MemoryCardGame",
         "site": "https://vampirematch.netlify.app",
         "tech": "HTML | CSS | JavaScript",
-        "tag": "A classic memory card game with a slight lust for blood.",
+        "tag": "A classic memory card game with a slight lust for blood",
         "description": [
-            "Test your memory with three different difficulty levels. Flip over two cards at a time, hunting down those matches in the fewest moves possible to beat your high score.",
+            "Test your memory with three different difficulty levels. Flip over two cards at a time and hunt down those matches in the fewest moves possible to beat the high score.",
             "This memory card game, inspired by the series ‘What We Do in the Shadows’, was built in plain javascript by a remote team of 4 in one week.",
             "Alongside creating the custom artwork for the deck of cards, I also developed the CSS animation that flips the card over to reveal the front, and integrated it with the function that determines if the cards are a match."
         ],
