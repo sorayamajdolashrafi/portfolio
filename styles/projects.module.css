@@ -13,22 +13,6 @@
     overflow-x: hidden;
 }
 
-.projects::-webkit-scrollbar {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 3px;
-}
-
-.projects::-webkit-scrollbar-track {
-    background: var(--mint);
-    border: white 3px solid;
-}
-
-.projects::-webkit-scrollbar-thumb {
-    height: 50px;
-    background: var(--mint);
-}
-
 .project {
     width: 84vw;
     height: auto;
@@ -228,6 +212,22 @@
 
 /* tablet s */
 @media (min-width: 43em) {    
+    .projects::-webkit-scrollbar {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 3px;
+    }
+    
+    .projects::-webkit-scrollbar-track {
+        background: var(--mint);
+        border: var(--cream) 3px solid;
+    }
+    
+    .projects::-webkit-scrollbar-thumb {
+        height: 50px;
+        background: var(--mint);
+    }
+
     .project {
         width: 36vw;
     }
@@ -262,14 +262,20 @@
 @media (min-width: 62em) {  
     .projects {
         width: 80%;
+        scroll-snap-type: y proximity;
+        scroll-padding-top: 3rem;
     }
 
-    .tag {
-        width: 90%;
+    .project {
+        scroll-snap-align: end;
     }
 
     .project h2 {
         padding-bottom: .7rem;
+    }
+
+    .tag {
+        width: 90%;
     }
 }
 

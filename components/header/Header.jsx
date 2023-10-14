@@ -20,7 +20,7 @@ const Header = () => {
                 about
             </Link>
             <a 
-                href="/SorayaBensonResume2021.pdf"    
+                href="/soraya-benson-resume-2023.pdf"    
                 target="_blank"
                 >
                 cv
