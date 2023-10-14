@@ -1,0 +1,327 @@
+/* phone s */
+.projects {
+    width: 95%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.project {
+    width: 84vw;
+    height: auto;
+    list-style: none;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: height 1s;
+}
+
+.project h2 {
+    padding: 0 1rem calc(.2rem + .5vw) 1rem;
+    margin: 0;
+    max-width: 80%;
+    text-align: center;
+}
+
+.moon {
+    width: 84vw;
+    height: 42vw;
+    padding: .5rem;
+    padding-top: 1rem;
+    border-radius:  42vw 42vw 0 0;
+    background: var(--moon);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.moon p {
+    margin: 0;
+    margin-top: .5rem;
+    padding: 0;
+    text-align: center;
+}
+
+.tagWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tag {
+    width: 75%;
+}
+
+.tech {
+    font-weight: 600;
+}
+
+.beam {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carousel {
+    width: 100%;
+    display: flex;
+}
+
+.carousel img {
+    width: 100%;
+    height:auto;
+    z-index: 2;
+}
+
+.open {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.indicatorWrapper {
+    bottom: 0;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.indicators {
+    transition: opacity .25s ease-in;
+    filter: alpha(opacity=30);
+    box-shadow: 1px 1px var(--dusk);
+    background: var(--moon);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.selected {
+    background: var(--poppy);
+}
+
+.arrowWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.arrows {
+    color: var(--dusk);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.arrows:hover {
+    color: var(--poppy);
+    transition: 0.3s ease-in-out;
+}
+
+.description {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+
+.links {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem;
+}
+
+.links a:hover {
+    color: var(--poppy);
+    transition: 0.3s ease-in-out;
+}
+
+/* phone fold */
+@media(max-width: 17.5em) {
+    .moon {
+        padding: .2rem;
+    }
+
+    .project h2 {
+        padding-bottom: .05rem;
+    }
+
+    .moon p {
+        margin-top: 0;
+        margin-bottom: .05rem;
+    }
+}
+
+/* phone xs */
+@media (max-width: 22.3em) {
+    .project h2 {
+        padding-bottom: .2rem;
+    }
+
+    .moon p {
+        margin-bottom: .2rem;
+    }
+
+    .tag {
+        width: 80%;
+    }
+}
+
+/* phone m */
+@media (min-width: 29.7em) {
+    .tag {
+        width: 85%;
+    }
+
+    .project h2 {
+        padding-bottom: .2rem;
+    }
+}
+
+/* tablet s */
+@media (min-width: 43em) {    
+    .projects::-webkit-scrollbar {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 3px;
+    }
+    
+    .projects::-webkit-scrollbar-track {
+        background: var(--mint);
+        border: var(--cream) 3px solid;
+    }
+    
+    .projects::-webkit-scrollbar-thumb {
+        height: 50px;
+        background: var(--mint);
+    }
+
+    .project {
+        width: 36vw;
+    }
+
+    .moon {
+        width: 36vw;
+        height: 18vw;
+        border-radius:  18vw 18vw 0 0;
+    }
+
+    .moon p {
+        margin-top: .2rem;
+    }
+
+    .project h2 {
+        padding-bottom: 0;
+    }
+}
+
+/* tablet m */
+@media (min-width: 51em) {
+    .moon p {
+        margin-top: .5rem;
+    }
+
+    .project h2 {
+        padding-bottom: .5rem;
+    }
+}
+
+/* laptop */
+@media (min-width: 62em) {  
+    .projects {
+        width: 80%;
+        scroll-snap-type: y proximity;
+        scroll-padding-top: 3rem;
+    }
+
+    .project {
+        scroll-snap-align: end;
+    }
+
+    .project h2 {
+        padding-bottom: .7rem;
+    }
+
+    .tag {
+        width: 90%;
+    }
+}
+
+/* desktop s */
+@media (min-width: 69em) {
+    .project h2 {
+        padding-bottom: .8rem;
+    }
+
+    .moon p {
+        margin-top: .8rem;
+    }
+}
+
+/* desktop m */
+@media (min-width: 82em) {
+    .projects {
+        width: 60%;
+    }
+
+    .project {
+        width: 26vw;
+    }
+
+    .project h2 {
+        padding-bottom: .5rem;
+    }
+
+    .moon {
+        width: 26vw;
+        height: 13vw;
+        border-radius:  13vw 13vw 0 0;
+    }
+
+    .moon p {
+        margin-top: .4rem;
+    }
+
+    .tag {
+        width: 85%;
+    }
+}
+
+/* desktop l */
+@media (min-width: 104em) {
+    .tag {
+        width: 85%;
+    }
+}
