@@ -12,13 +12,13 @@ const Footer = () => {
                 aria-label="link to email">
                 <EmailIcon />
             </a>
-            <a href="https://www.linkedin.com/in/soraya-benson/" 
+            <a href="https://www.linkedin.com/in/soraya-majdolashrafi/" 
                 role="button"
                 target="_blank"
                 aria-label="link to linkedin">
                 <LinkedInIcon />
             </a>
-            <a href="https://github.com/sorayabenson" 
+            <a href="https://github.com/sorayamajdolashrafi" 
                 role="button"
                 target="_blank"
                 aria-label="link to github">
