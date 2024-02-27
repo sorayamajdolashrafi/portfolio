@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <a href="mailto:hello@sorayabenson.com" 
+            <a href="mailto:hello@sorayamajdolashrafi.com" 
                 role="button"
                 target="_blank"
                 aria-label="link to email">
