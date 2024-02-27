@@ -6,7 +6,7 @@ const Header = () => {
         <div className={styles.header}>
             <header>
                 <Link href='/'>
-                    <h1>SORAYA BENSON</h1>
+                    <h1>SORAYA MAJDOLASHRAFI</h1>
                 </Link>
             </header>
         <nav>
