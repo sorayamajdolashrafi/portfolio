@@ -39,6 +39,14 @@
     color: var(--poppy);
 }
 
+/* phone m */
+@media (min-width: 29.7em) {
+    .header h1 {
+        font-size: 1rem;
+        background: cyan;
+    }
+}
+
 /* tablet */
 @media (min-width: 43em) {
     .header h1 {
