@@ -30,7 +30,8 @@ html, body {
 /* phone s */
 h1 {
   font-weight: 400;
-  font-size: calc(1.7rem + 1vw);
+  font-size: calc(1.4rem + 1vw);
+  background: coral;
   font-family: 'Rubik Mono One', sans-serif;
   letter-spacing: -0.05rem;
   word-spacing: -.5rem;
